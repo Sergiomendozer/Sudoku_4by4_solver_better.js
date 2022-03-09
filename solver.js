@@ -80,15 +80,15 @@ function sudoku_solver(table) {
     return true;
   }
   // else, this means there is an empty space
-  //second stepS
   // for loop, puts numbers 1 to 4 in Space, values var n = sudoku number
   for (var n = 1; n < 5; n++) {
     // if third step runs a function
     console.log(`n = ${n}`);
     if (check_if_number_can_go_in_position(table, n, r, c) == true) {
+      table[r][c] = n;
+      console.table(table);
       sudoku_solver(table);
       //   table[r][c] = 0;
-      return true;
     }
     table[r][c] = 0;
   }
