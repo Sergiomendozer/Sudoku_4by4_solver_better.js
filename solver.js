@@ -27,20 +27,23 @@ document.getElementById("table_4").innerHTML = forth_col;
 var solved_table = [];
 //////////////////////////////////
 
-function find_empty_space() {
+function find_empty_space(table) {
   // function goes from right to left of table finding every empty space, empty space == -5,
   console.log("function find_empty_space()");
+  console.table(table); //!for testing it displays table
   //for loops go through 1-4
-  for (var row = 0; row < 5; row++) {
-    for (var column = 0; column < 5; column++) {
-      console.log(`row: ${row}`);
-      console.log(`column: ${column}`);
+  // var meanings r = row, c = column
+  for (var r = 0; r < 5; r++) {
+    for (var c = 0; c < 5; c++) {
+      console.log(`row: ${r}`); //!for testing
+      console.log(`column: ${c}`); //!for testing
+      //   table[r][c];
     }
   }
 }
-function sudoku_solver() {
+function sudoku_solver(table) {
   // contains all other sub functions this is the main function
-  find_empty_space();
+  find_empty_space(table);
   //?function find_empty_space()
   //first step
   // function goes from right to left of table finding every empty space, empty space == -5, if
@@ -55,4 +58,4 @@ function sudoku_solver() {
   // then return function sudoku_solver()
   // else, the number cannot be put in position, table[row][col] == -5
 }
-sudoku_solver();
+sudoku_solver(table);
