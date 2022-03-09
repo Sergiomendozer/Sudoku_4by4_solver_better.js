@@ -45,9 +45,26 @@ function find_empty_space(table) {
   //only returns null,null when there are no more empty spaces
   return [null, null];
 }
-function check_if_number_can_go_in_position() {
+function check_if_number_can_go_in_position(table, n, r, c) {
   console.log("function check_if_number_can_go_in_position()");
+  console.log(`row ${table[r]}`);
+  // var below makes a array of tables column that is need to search for n
+  var column_c = table.map((d) => d[c]);
+  console.log(`col ${column_c}`);
+  //   console.log(table[r].indexOf(n));//!delete
+  //   console.log(column_c.indexOf(n));//!delete
+  if (table[r].indexOf(n) != -1) {
+    console.log("backtrack");
+    return false;
+  }
+  if (column_c.indexOf(n) != -1) {
+    console.log("backtrack");
+    return false;
+  }
 }
+//   } if (ta){}
+//checks if row does not contain n
+
 // this is the main function
 function sudoku_solver(table) {
   // contains all other sub functions this is the main function
@@ -57,17 +74,18 @@ function sudoku_solver(table) {
   // function goes from right to left of table finding every empty space, empty space ==  0
   var r = values[0];
   var c = values[1];
-  console.log("in 1");
+  console.log("in one");
   //last step, if null, null,then the table is solve there are no more empty spaces
   if (r == null && c == null) {
     return true;
   }
   // else, this means there is an empty space
-  //second step
-  // for loop, puts numbers 1 to 4 in space, values var n = sudoku number
-  for (var n = 0; n < 5; n++) {
+  //second stepS
+  // for loop, puts numbers 1 to 4 in Space, values var n = sudoku number
+  for (var n = 1; n < 5; n++) {
     // if third step runs a function
-    return check_if_number_can_go_in_position();
+    console.log(`n = ${n}`);
+    return check_if_number_can_go_in_position(table, n, r, c);
   }
 
   // if it can number can go in position place number in position
