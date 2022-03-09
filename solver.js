@@ -42,23 +42,34 @@ function find_empty_space(table) {
       }
     }
   }
+  //only returns null,null when there are no more empty spaces
+  return [null, null];
 }
+function check_if_number_can_go_in_position() {
+  console.log("function check_if_number_can_go_in_position()");
+}
+// this is the main function
 function sudoku_solver(table) {
   // contains all other sub functions this is the main function
   //r = row, c = column
   var values = find_empty_space(table);
+  //first step
+  // function goes from right to left of table finding every empty space, empty space ==  0
   var r = values[0];
   var c = values[1];
-  console.log(r, c);
-  //first step
-  // function goes from right to left of table finding every empty space, empty space ==  0, if
-  //last step
-  // if the row is equal to none and col = none, then the table is solve there are no more empty spaces
-  //second step
+  console.log("in 1");
+  //last step, if null, null,then the table is solve there are no more empty spaces
+  if (r == null && c == null) {
+    return true;
+  }
   // else, this means there is an empty space
-  // for loop that of i , puts numbers 1 to 4 in space, values var number
-  // if third step runs a function
-  //?function check_if_number_can_go_in_position()
+  //second step
+  // for loop, puts numbers 1 to 4 in space, values var n = sudoku number
+  for (var n = 0; n < 5; n++) {
+    // if third step runs a function
+    return check_if_number_can_go_in_position();
+  }
+
   // if it can number can go in position place number in position
   // then return function sudoku_solver()
   // else, the number cannot be put in position, table[row][col] ==  0
