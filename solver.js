@@ -54,13 +54,14 @@ function check_if_number_can_go_in_position(table, n, r, c) {
   //   console.log(table[r].indexOf(n));//!delete
   //   console.log(column_c.indexOf(n));//!delete
   if (table[r].indexOf(n) != -1) {
-    console.log("backtrack");
+    console.log("backtrack r");
     return false;
   }
   if (column_c.indexOf(n) != -1) {
-    console.log("backtrack");
+    console.log("backtrack c");
     return false;
   }
+  return true;
 }
 //   } if (ta){}
 //checks if row does not contain n
@@ -69,9 +70,8 @@ function check_if_number_can_go_in_position(table, n, r, c) {
 function sudoku_solver(table) {
   // contains all other sub functions this is the main function
   //r = row, c = column
-  var values = find_empty_space(table);
-  //first step
   // function goes from right to left of table finding every empty space, empty space ==  0
+  var values = find_empty_space(table);
   var r = values[0];
   var c = values[1];
   console.log("in one");
@@ -85,7 +85,12 @@ function sudoku_solver(table) {
   for (var n = 1; n < 5; n++) {
     // if third step runs a function
     console.log(`n = ${n}`);
-    return check_if_number_can_go_in_position(table, n, r, c);
+    if (check_if_number_can_go_in_position(table, n, r, c) == true) {
+      sudoku_solver(table);
+      //   table[r][c] = 0;
+      return true;
+    }
+    table[r][c] = 0;
   }
 
   // if it can number can go in position place number in position
