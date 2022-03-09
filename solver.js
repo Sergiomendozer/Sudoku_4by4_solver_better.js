@@ -43,7 +43,6 @@ function find_empty_space(table) {
     }
   }
   //only returns null,null when there are no more empty spaces
-  return [null, null];
 }
 function check_if_number_can_go_in_position(table, n, r, c) {
   console.log("function check_if_number_can_go_in_position()");
@@ -76,9 +75,7 @@ function sudoku_solver(table) {
   var c = values[1];
   console.log("in one");
   //last step, if null, null,then the table is solve there are no more empty spaces
-  if (r == null && c == null) {
-    return true;
-  }
+  //! add new if statement here == -1 then solved
   // else, this means there is an empty space
   // for loop, puts numbers 1 to 4 in Space, values var n = sudoku number
   for (var n = 1; n < 5; n++) {
@@ -92,9 +89,10 @@ function sudoku_solver(table) {
     }
     table[r][c] = 0;
   }
-
-  // if it can number can go in position place number in position
-  // then return function sudoku_solver()
-  // else, the number cannot be put in position, table[row][col] ==  0
 }
+
+// if it can number can go in position place number in position
+// then return function sudoku_solver()
+// else, the number cannot be put in position, table[row][col] ==  0
+
 sudoku_solver(table);
