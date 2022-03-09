@@ -26,21 +26,33 @@ document.getElementById("table_3").innerHTML = third_col;
 document.getElementById("table_4").innerHTML = forth_col;
 var solved_table = [];
 //////////////////////////////////
-//? = functions
-//? function sudoku_solver()
-// contains all other sub functions
-//call ?function find_empty_space()
-//?function find_empty_space()
-//first step
-// function goes from right to left of table finding every empty space, empty space == -5, if
-//last step
-// if the row is equal to none and col = none, then the table is solve there are no more empty spaces
 
-//second step
-// else, this means there is an empty space
-// for loop that of i , puts numbers 1 to 4 in space, values var number
-// if third step runs a function
-//?function check_if_number_can_go_in_position()
-// if it can number can go in position place number in position
-// then return function sudoku_solver()
-// else, the number cannot be put in position, table[row][col] == -5
+function find_empty_space() {
+  // function goes from right to left of table finding every empty space, empty space == -5,
+  console.log("function find_empty_space()");
+  //for loops go through 1-4
+  for (var row = 0; row < 5; row++) {
+    for (var column = 0; column < 5; column++) {
+      console.log(`row: ${row}`);
+      console.log(`column: ${column}`);
+    }
+  }
+}
+function sudoku_solver() {
+  // contains all other sub functions this is the main function
+  find_empty_space();
+  //?function find_empty_space()
+  //first step
+  // function goes from right to left of table finding every empty space, empty space == -5, if
+  //last step
+  // if the row is equal to none and col = none, then the table is solve there are no more empty spaces
+  //second step
+  // else, this means there is an empty space
+  // for loop that of i , puts numbers 1 to 4 in space, values var number
+  // if third step runs a function
+  //?function check_if_number_can_go_in_position()
+  // if it can number can go in position place number in position
+  // then return function sudoku_solver()
+  // else, the number cannot be put in position, table[row][col] == -5
+}
+sudoku_solver();
