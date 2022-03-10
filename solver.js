@@ -26,12 +26,6 @@ document.getElementById("table_3").innerHTML = third_col;
 document.getElementById("table_4").innerHTML = forth_col;
 var solved_table = [];
 //////////////////////////////////
-function is_table_solved(r, c) {
-  if ((r == null, c == null)) {
-    return false;
-  }
-  return true;
-}
 function find_empty_space(table) {
   // function goes from right to left of table finding every empty space, empty space ==  0,
   console.log("function find_empty_space()");
@@ -49,9 +43,8 @@ function find_empty_space(table) {
     table[2].indexOf(0) == -1 &&
     table[3].indexOf(0) == -1
   ) {
-    console.log("Detective Sudoku Solver has solved your table");
+    console.log("Sudoku Solver has solved your table");
     var solved_table = table;
-    return;
   } else {
     for (var r = 0; r < 5; r++) {
       for (var c = 0; c < 5; c++) {
@@ -67,30 +60,23 @@ function find_empty_space(table) {
   }
 }
 function check_if_number_can_go_in_position(table, n, r, c) {
-  if ((r === null) & (c === null)) {
-    console.log("NULL");
-    return;
-  } else {
-    console.log("function check_if_number_can_go_in_position()");
-    console.log(`row ${table[r]}`);
-    // var below makes a array of tables column that is need to search for n
-    var column_c = table.map((d) => d[c]);
-    console.log(`col ${column_c}`);
-    //   console.log(table[r].indexOf(n));//!delete
-    //   console.log(column_c.indexOf(n));//!delete
-    if (table[r].indexOf(n) != -1) {
-      console.log("backtrack r");
-      return false;
-    }
-    if (column_c.indexOf(n) != -1) {
-      console.log("backtrack c");
-      return false;
-    }
-    return true;
+  console.log("function check_if_number_can_go_in_position()");
+  console.log(`row ${table[r]}`);
+  // var below makes a array of tables column that is need to search for n
+  var column_c = table.map((d) => d[c]);
+  console.log(`col ${column_c}`);
+  //   console.log(table[r].indexOf(n));//!delete
+  //   console.log(column_c.indexOf(n));//!delete
+  if (table[r].indexOf(n) != -1) {
+    console.log("backtrack r");
+    return false;
   }
+  if (column_c.indexOf(n) != -1) {
+    console.log("backtrack c");
+    return false;
+  }
+  return true;
 }
-//   } if (ta){}
-//checks if row does not contain n
 
 // this is the main function
 function sudoku_solver(table) {
@@ -98,9 +84,9 @@ function sudoku_solver(table) {
   //r = row, c = column
   // function goes from right to left of table finding every empty space, empty
   var values = find_empty_space(table);
+  console.log(values);
   var r = values[0];
   var c = values[1];
-  console.log(values);
   console.log("in one");
   //   is_table_solved(r, c);
   for (var n = 1; n < 5; n++) {
