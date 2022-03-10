@@ -6,43 +6,12 @@ var table_1 = document.getElementById("table_1");
 var table_2 = document.getElementById("table_2");
 var table_3 = document.getElementById("table_3");
 var table_4 = document.getElementById("table_4");
-var sudoku_1 = [
-  [0, 0, 0, 0],
-  [1, 0, 2, 0],
-  [0, 1, 4, 0],
-  [2, 0, 0, 1],
-];
-var sudoku_0 = [
-  [0, 0, 0, 0],
-  [0, 0, 0, 0],
-  [0, 0, 0, 0],
-  [0, 0, 0, 0],
-];
 
 var sudoku_1 = [
   [0, 0, 0, 0],
   [1, 0, 2, 0],
   [0, 1, 4, 0],
   [2, 0, 0, 1],
-];
-
-var sudoku_2 = [
-  [0, 4, 3, 0],
-  [3, 0, 0, 0],
-  [2, 0, 1, 0],
-  [0, 0, 0, 0],
-];
-var sudoku_3 = [
-  [0, 0, 0, 2],
-  [0, 2, 4, 0],
-  [0, 0, 1, 0],
-  [0, 4, 0, 3],
-];
-var sudoku_4 = [
-  [0, 4, 0, 3],
-  [0, 2, 0, 0],
-  [0, 0, 0, 0],
-  [0, 3, 4, 1],
 ];
 var sudoku_29 = [
   [0, 0, 3, 0],
@@ -51,7 +20,7 @@ var sudoku_29 = [
   [0, 4, 3, 0],
 ];
 
-var table = sudoku_29;
+var table = sudoku_1;
 
 var first_col = table[0];
 var second_col = table[1];
