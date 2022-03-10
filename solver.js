@@ -32,6 +32,20 @@ function find_empty_space(table) {
   console.table(table); //!for testing it displays table
   //for loops go through 1-4
   // var meanings r = row, c = column
+  var s = table[0].indexOf(0);
+  var d = table[1].indexOf(0);
+  var f = table[2].indexOf(0);
+  var g = table[3].indexOf(0);
+  console.log(s, d, f, g);
+  if (
+    table[0].indexOf(0) == -1 &&
+    table[1].indexOf(0) == -1 &&
+    table[2].indexOf(0) == -1 &&
+    table[3].indexOf(0) == -1
+  ) {
+    console.log("Detective Sudoku Solver has solved your table");
+    return [null, null];
+  }
   for (var r = 0; r < 5; r++) {
     for (var c = 0; c < 5; c++) {
       console.log(`row: ${r}`); //!for testing
@@ -76,6 +90,12 @@ function sudoku_solver(table) {
   console.log("in one");
   //last step, if null, null,then the table is solve there are no more empty spaces
   //! add new if statement here == -1 then solved
+  //   var s = table[0].indexOf(0);
+  //   var d = table[1].indexOf(0);
+  //   var f = table[2].indexOf(0);
+  //   var g = table[3].indexOf(0);
+  //   console.log(s, d, f, g);
+  //   function is_it_solved()
   // else, this means there is an empty space
   // for loop, puts numbers 1 to 4 in Space, values var n = sudoku number
   for (var n = 1; n < 5; n++) {
