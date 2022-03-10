@@ -26,6 +26,12 @@ document.getElementById("table_3").innerHTML = third_col;
 document.getElementById("table_4").innerHTML = forth_col;
 var solved_table = [];
 //////////////////////////////////
+function is_table_solved(r, c) {
+  if ((r == null, c == null)) {
+    return false;
+  }
+  return true;
+}
 function find_empty_space(table) {
   // function goes from right to left of table finding every empty space, empty space ==  0,
   console.log("function find_empty_space()");
@@ -44,37 +50,44 @@ function find_empty_space(table) {
     table[3].indexOf(0) == -1
   ) {
     console.log("Detective Sudoku Solver has solved your table");
-    return [null, null];
-  }
-  for (var r = 0; r < 5; r++) {
-    for (var c = 0; c < 5; c++) {
-      console.log(`row: ${r}`); //!for testing
-      console.log(`column: ${c}`); //!for testing
-      // if object in array is equal to  0 then it means the space is empty
-      if (table[r][c] == 0) {
-        return [r, c];
+    var solved_table = table;
+    return;
+  } else {
+    for (var r = 0; r < 5; r++) {
+      for (var c = 0; c < 5; c++) {
+        console.log(`row: ${r}`); //!for testing
+        console.log(`column: ${c}`); //!for testing
+        // if object in array is equal to  0 then it means the space is empty
+        if (table[r][c] == 0) {
+          return [r, c];
+        }
       }
     }
+    //only returns null,null when there are no more empty spaces
   }
-  //only returns null,null when there are no more empty spaces
 }
 function check_if_number_can_go_in_position(table, n, r, c) {
-  console.log("function check_if_number_can_go_in_position()");
-  console.log(`row ${table[r]}`);
-  // var below makes a array of tables column that is need to search for n
-  var column_c = table.map((d) => d[c]);
-  console.log(`col ${column_c}`);
-  //   console.log(table[r].indexOf(n));//!delete
-  //   console.log(column_c.indexOf(n));//!delete
-  if (table[r].indexOf(n) != -1) {
-    console.log("backtrack r");
-    return false;
+  if ((r === null) & (c === null)) {
+    console.log("NULL");
+    return;
+  } else {
+    console.log("function check_if_number_can_go_in_position()");
+    console.log(`row ${table[r]}`);
+    // var below makes a array of tables column that is need to search for n
+    var column_c = table.map((d) => d[c]);
+    console.log(`col ${column_c}`);
+    //   console.log(table[r].indexOf(n));//!delete
+    //   console.log(column_c.indexOf(n));//!delete
+    if (table[r].indexOf(n) != -1) {
+      console.log("backtrack r");
+      return false;
+    }
+    if (column_c.indexOf(n) != -1) {
+      console.log("backtrack c");
+      return false;
+    }
+    return true;
   }
-  if (column_c.indexOf(n) != -1) {
-    console.log("backtrack c");
-    return false;
-  }
-  return true;
 }
 //   } if (ta){}
 //checks if row does not contain n
@@ -83,21 +96,13 @@ function check_if_number_can_go_in_position(table, n, r, c) {
 function sudoku_solver(table) {
   // contains all other sub functions this is the main function
   //r = row, c = column
-  // function goes from right to left of table finding every empty space, empty space ==  0
+  // function goes from right to left of table finding every empty space, empty
   var values = find_empty_space(table);
   var r = values[0];
   var c = values[1];
+  console.log(values);
   console.log("in one");
-  //last step, if null, null,then the table is solve there are no more empty spaces
-  //! add new if statement here == -1 then solved
-  //   var s = table[0].indexOf(0);
-  //   var d = table[1].indexOf(0);
-  //   var f = table[2].indexOf(0);
-  //   var g = table[3].indexOf(0);
-  //   console.log(s, d, f, g);
-  //   function is_it_solved()
-  // else, this means there is an empty space
-  // for loop, puts numbers 1 to 4 in Space, values var n = sudoku number
+  //   is_table_solved(r, c);
   for (var n = 1; n < 5; n++) {
     // if third step runs a function
     console.log(`n = ${n}`);
@@ -105,10 +110,9 @@ function sudoku_solver(table) {
       table[r][c] = n;
       console.table(table);
       sudoku_solver(table);
-      //   table[r][c] = 0;
     }
-    table[r][c] = 0;
   }
+  table[r][c] = 0;
 }
 
 // if it can number can go in position place number in position

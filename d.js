@@ -1,0 +1,1 @@
+if (is_table_solved(r, c) == true) {
