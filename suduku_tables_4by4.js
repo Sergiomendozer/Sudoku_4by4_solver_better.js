@@ -1,5 +1,4 @@
-// do not use 18 and 29 and 24
-
+// do not use: 29, its wrong
 var sudoku_0 = [
   [0, 0, 0, 0],
   [0, 0, 0, 0],
