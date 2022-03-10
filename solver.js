@@ -43,13 +43,14 @@ function find_empty_space(table) {
     table[2].indexOf(0) == -1 &&
     table[3].indexOf(0) == -1
   ) {
-    console.log("Sudoku Solver has solved your table");
-    var solved_table = table;
+    console.log("Detective Sudoku Solver has solved your table");
+    var solved_table = table; //!this is for later
+    return true;
   } else {
     for (var r = 0; r < 5; r++) {
       for (var c = 0; c < 5; c++) {
-        console.log(`row: ${r}`); //!for testing
-        console.log(`column: ${c}`); //!for testing
+        // console.log(`row: ${r}`); //!for testing
+        // console.log(`column: ${c}`); //!for testing
         // if object in array is equal to  0 then it means the space is empty
         if (table[r][c] == 0) {
           return [r, c];
@@ -81,6 +82,7 @@ function sudoku_solver(table) {
   //r = row, c = column
   // function goes from right to left of table finding every empty space, empty
   var values = find_empty_space(table);
+  if (values === true) return true;
   console.log(values);
   var r = values[0];
   var c = values[1];
@@ -90,7 +92,7 @@ function sudoku_solver(table) {
     if (check_if_number_can_go_in_position(table, n, r, c) == true) {
       table[r][c] = n;
       console.table(table);
-      sudoku_solver(table);
+      if (sudoku_solver(table) === true) return true;
     }
   }
   table[r][c] = 0;
