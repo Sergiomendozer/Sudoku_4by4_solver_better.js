@@ -88,10 +88,12 @@ function find_empty_space(table) {
     document.getElementById("table_2").innerHTML = second_col;
     document.getElementById("table_3").innerHTML = third_col;
     document.getElementById("table_4").innerHTML = forth_col;
-    document.getElementById("table_5").innerHTML = first_col;
-    document.getElementById("table_6").innerHTML = second_col;
-    document.getElementById("table_7").innerHTML = third_col;
-    document.getElementById("table_8").innerHTML = forth_col;
+    document.getElementById("table_5").innerHTML = fifth_col;
+    document.getElementById("table_6").innerHTML = sixth_col;
+    document.getElementById("table_7").innerHTML = seventh_col;
+    document.getElementById("table_8").innerHTML = eighth_col;
+    document.getElementById("table_9").innerHTML = ninth_col;
+
     return true;
   }
   //for loops go through 1-9
