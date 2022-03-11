@@ -6,6 +6,11 @@ var table_1 = document.getElementById("table_1");
 var table_2 = document.getElementById("table_2");
 var table_3 = document.getElementById("table_3");
 var table_4 = document.getElementById("table_4");
+var table_5 = document.getElementById("table_5");
+var table_6 = document.getElementById("table_6");
+var table_7 = document.getElementById("table_7");
+var table_8 = document.getElementById("table_8");
+var table_9 = document.getElementById("table_9");
 
 var sudoku9_1 = [
   [3, 0, 0, 2, 0, 0, 0, 9, 0],
@@ -25,11 +30,21 @@ var first_col = table[0];
 var second_col = table[1];
 var third_col = table[2];
 var forth_col = table[3];
+var fifth_col = table[4];
+var sixth_col = table[5];
+var seventh_col = table[6];
+var eighth_col = table[7];
+var ninth_col = table[8];
 
 document.getElementById("table_1").innerHTML = first_col;
 document.getElementById("table_2").innerHTML = second_col;
 document.getElementById("table_3").innerHTML = third_col;
 document.getElementById("table_4").innerHTML = forth_col;
+document.getElementById("table_5").innerHTML = fifth_col;
+document.getElementById("table_6").innerHTML = sixth_col;
+document.getElementById("table_7").innerHTML = seventh_col;
+document.getElementById("table_8").innerHTML = eighth_col;
+document.getElementById("table_9").innerHTML = ninth_col;
 //////////////////////////////////
 // function goes from right to left of table finding every empty space, empty spaces are the zeros
 function find_empty_space(table) {
@@ -63,10 +78,20 @@ function find_empty_space(table) {
     var second_col = table[1];
     var third_col = table[2];
     var forth_col = table[3];
+    var fifth_col = table[4];
+    var sixth_col = table[5];
+    var seventh_col = table[6];
+    var eighth_col = table[7];
+    var ninth_col = table[8];
+
     document.getElementById("table_1").innerHTML = first_col;
     document.getElementById("table_2").innerHTML = second_col;
     document.getElementById("table_3").innerHTML = third_col;
     document.getElementById("table_4").innerHTML = forth_col;
+    document.getElementById("table_5").innerHTML = first_col;
+    document.getElementById("table_6").innerHTML = second_col;
+    document.getElementById("table_7").innerHTML = third_col;
+    document.getElementById("table_8").innerHTML = forth_col;
     return true;
   }
   //for loops go through 1-9
