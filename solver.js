@@ -128,8 +128,21 @@ function check_if_number_can_go_in_position(table, n, r, c) {
   if (column_c.indexOf(n) != -1) {
     console.log("re-evaluate b/c c");
     return false;
+  } // case covers if number n is already in box
+  var r_in_which_box = Math.floor(r / 3) * 3;
+  var c_in_which_box = Math.floor(c / 3) * 3;
+  var r_end_of_box = r_in_which_box + 3;
+  var c_end_of_box = c_in_which_box + 3;
+  var r_box = r_in_which_box;
+  var c_box = c_in_which_box;
+  for (r_box; r_box < r_end_of_box; r_box++) {
+    for (c_box; c_box < c_end_of_box; c_box++) {
+      if (table[r_box][c_box] == n) {
+        return false;
+      }
+    }
   } // if above cases does not apply then sudoku number n can be placed in that position
-  // new case where it covers the box
+
   return true;
 }
 
