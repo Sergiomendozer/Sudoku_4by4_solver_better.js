@@ -7,14 +7,19 @@ var table_2 = document.getElementById("table_2");
 var table_3 = document.getElementById("table_3");
 var table_4 = document.getElementById("table_4");
 
-var sudoku_hardest = [
-  [0, 0, 4, 0],
-  [1, 0, 0, 0],
-  [0, 2, 0, 0],
-  [0, 0, 0, 3],
+var sudoku9_1 = [
+  [3, 0, 0, 2, 0, 0, 0, 9, 0],
+  [4, 5, 0, 6, 0, 9, 0, 1, 8],
+  [7, 0, 6, 0, 0, 3, 4, 0, 0],
+  [0, 0, 0, 0, 4, 1, 0, 0, 9],
+  [5, 0, 7, 3, 0, 8, 2, 0, 0],
+  [9, 8, 0, 7, 0, 0, 5, 0, 4],
+  [0, 0, 0, 4, 0, 5, 0, 2, 0],
+  [1, 3, 0, 0, 6, 0, 7, 0, 5],
+  [0, 2, 0, 0, 8, 0, 0, 0, 0],
 ];
 
-var table = sudoku_hardest;
+var table = sudoku9_1;
 
 var first_col = table[0];
 var second_col = table[1];
@@ -34,13 +39,23 @@ function find_empty_space(table) {
   var d = table[1].indexOf(0); //!used for testing
   var f = table[2].indexOf(0); //!used for testing
   var g = table[3].indexOf(0); //!used for testing
-  console.log(s, d, f, g); //!used for testing
+  var h = table[4].indexOf(0); //!used for testing
+  var q = table[5].indexOf(0); //!used for testing
+  var w = table[6].indexOf(0); //!used for testing
+  var e = table[7].indexOf(0); //!used for testing
+  var t = table[8].indexOf(0); //!used for testing
+  console.log(s, d, f, g, w, e, t); //!used for testing
   // case where the sudoku table is solved and there are not more empty spaces
   if (
     table[0].indexOf(0) == -1 &&
     table[1].indexOf(0) == -1 &&
     table[2].indexOf(0) == -1 &&
-    table[3].indexOf(0) == -1
+    table[3].indexOf(0) == -1 &&
+    table[4].indexOf(0) == -1 &&
+    table[5].indexOf(0) == -1 &&
+    table[6].indexOf(0) == -1 &&
+    table[7].indexOf(0) == -1 &&
+    table[8].indexOf(0) == -1
   ) {
     console.log("Detective Sudoku Solver has solved your table");
     //below updates string in html
@@ -54,11 +69,11 @@ function find_empty_space(table) {
     document.getElementById("table_4").innerHTML = forth_col;
     return true;
   }
-  //for loops go through 1-4
+  //for loops go through 1-9
   // var meanings r = row, c = column
   else {
-    for (var r = 0; r < 5; r++) {
-      for (var c = 0; c < 5; c++) {
+    for (var r = 0; r < 10; r++) {
+      for (var c = 0; c < 10; c++) {
         // console.log(`row: ${r}`); //!for testing
         // console.log(`column: ${c}`); //!for testing
         // if object in array is equal to  0 then it means the space is empty
@@ -69,7 +84,7 @@ function find_empty_space(table) {
     }
   }
 }
-// a number n is picked from 1 to 4 and in the empty position the function checks if n can go in the empty space
+// a number n is picked from 1 to 9 and in the empty position the function checks if n can go in the empty space
 //n can only be put in the empty space if it follows rules of sudoku
 function check_if_number_can_go_in_position(table, n, r, c) {
   console.log("function check_if_number_can_go_in_position()"); //!for testing
@@ -103,8 +118,8 @@ function sudoku_solver(table) {
   var r = values[0];
   var c = values[1];
   console.log("in one"); //! for in testing
-  // for loop, is so 1 to 4 sudoku numbers get run into empty position
-  for (var n = 1; n < 5; n++) {
+  // for loop, is so 1 to 9 sudoku numbers get run into empty position
+  for (var n = 1; n < 10; n++) {
     console.log(`n = ${n}`); //! for in testing
     if (check_if_number_can_go_in_position(table, n, r, c) == true) {
       table[r][c] = n;
