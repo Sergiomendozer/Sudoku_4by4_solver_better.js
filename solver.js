@@ -130,17 +130,6 @@ function check_if_number_can_go_in_position(table, n, r, c) {
     return false;
   } // if above cases does not apply then sudoku number n can be placed in that position
   // new case where it covers the box
-  var box = [
-    [0, 1, 2, 3, 4, 5, 6, 7, 8],
-    [9, 10, 11, 12, 13, 14, 15, 16, 17],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-  ];
   return true;
 }
 
