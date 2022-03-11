@@ -7,18 +7,6 @@ var table_2 = document.getElementById("table_2");
 var table_3 = document.getElementById("table_3");
 var table_4 = document.getElementById("table_4");
 
-var sudoku_1 = [
-  [0, 0, 0, 0],
-  [1, 0, 2, 0],
-  [0, 1, 4, 0],
-  [2, 0, 0, 1],
-];
-var sudoku_29 = [
-  [0, 0, 3, 0],
-  [0, 2, 1, 0],
-  [1, 0, 0, 2],
-  [0, 4, 3, 0],
-];
 var sudoku_hardest = [
   [0, 0, 4, 0],
   [1, 0, 0, 0],
@@ -26,7 +14,7 @@ var sudoku_hardest = [
   [0, 0, 0, 3],
 ];
 
-var table = sudoku_1;
+var table = sudoku_hardest;
 
 var first_col = table[0];
 var second_col = table[1];
@@ -37,7 +25,6 @@ document.getElementById("table_1").innerHTML = first_col;
 document.getElementById("table_2").innerHTML = second_col;
 document.getElementById("table_3").innerHTML = third_col;
 document.getElementById("table_4").innerHTML = forth_col;
-var solved_table = [];
 //////////////////////////////////
 function find_empty_space(table) {
   // function goes from right to left of table finding every empty space, empty space ==  0,
@@ -57,7 +44,14 @@ function find_empty_space(table) {
     table[3].indexOf(0) == -1
   ) {
     console.log("Detective Sudoku Solver has solved your table");
-    solved_table = table; //!this is for later
+    var first_col = table[0];
+    var second_col = table[1];
+    var third_col = table[2];
+    var forth_col = table[3];
+    document.getElementById("table_1").innerHTML = first_col;
+    document.getElementById("table_2").innerHTML = second_col;
+    document.getElementById("table_3").innerHTML = third_col;
+    document.getElementById("table_4").innerHTML = forth_col;
     return true;
   } else {
     for (var r = 0; r < 5; r++) {
