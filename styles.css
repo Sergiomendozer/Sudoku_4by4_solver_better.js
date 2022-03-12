@@ -8,6 +8,19 @@ body {
 #header {
   background-color: #d0d0d0;
   border: 5px solid #b3b3b3;
+}
+
+.icon {
+  margin-left: 2%;
+  float: left;
+  height: 40px;
+  width: 40px;
   font-family: Brush Script MT;
   font-size: 30px;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  padding: 1%;
 }
