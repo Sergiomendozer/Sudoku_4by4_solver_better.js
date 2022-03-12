@@ -1,6 +1,6 @@
-var header = document.getElementById("header");
-var text = "<h1>Detective Sudoku Solver</h1>";
-document.getElementById("header").innerHTML = text;
+// var header = document.getElementById("header");
+// var text = "<h1>Detective Sudoku Solver</h1>";
+// document.getElementById("header").innerHTML = text;
 
 var table_1 = document.getElementById("table_1");
 var table_2 = document.getElementById("table_2");

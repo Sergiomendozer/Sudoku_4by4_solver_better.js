@@ -7,5 +7,7 @@ body {
 
 #header {
   background-color: #d0d0d0;
-  border: 10px solid #b3b3b3;
+  border: 5px solid #b3b3b3;
+  font-family: Brush Script MT;
+  font-size: 30px;
 }
