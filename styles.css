@@ -1,10 +1,11 @@
 body {
-  background-color: aliceblue;
+  background-color: #fff9f7;
   margin: auto;
-  padding: 10px;
+  padding: 35px;
   text-align: center;
 }
-}
-#div1 {
-  color: rgb(158, 23, 30);
+
+#header {
+  background-color: #d0d0d0;
+  border: 10px solid #b3b3b3;
 }
