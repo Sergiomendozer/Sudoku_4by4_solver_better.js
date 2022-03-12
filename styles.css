@@ -1,7 +1,7 @@
 body {
   background-color: #fff9f7;
   margin: auto;
-  padding: 35px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -11,16 +11,16 @@ body {
 }
 
 .icon {
-  margin-left: 2%;
+  margin-left: 0%;
   float: left;
-  height: 40px;
-  width: 40px;
-  font-family: Brush Script MT;
-  font-size: 30px;
+  width: 76px;
+  height: 76px;
 }
 
 .title {
-  width: 100%;
-  height: auto;
-  padding: 1%;
+  font-family: Brush Script MT;
+  font-size: 30px;
+}
+#full_table {
+  font-size: 70px;
 }
