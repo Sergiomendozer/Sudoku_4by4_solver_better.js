@@ -1,11 +1,27 @@
 body {
-  margin: 0;
-  height: 80vh;
+  margin: 2;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: white;
   overflow: hidden;
+}
+
+#header {
+  border: 7px solid white;
+}
+
+.icon {
+  margin-left: 0%;
+  float: left;
+  width: 140px;
+  height: 140px;
+}
+
+.title {
+  font-family: Brush Script MT;
+  font-size: 30px;
 }
 
 .app {
