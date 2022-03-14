@@ -14,6 +14,30 @@ var sudoku_table = [
 var c0r0 = null;
 var value = null;
 
+function clear_all() {
+  console.log("clear table test");
+  document.getElementById("c0r0").value = "";
+  document.getElementById("c0r1").value = "";
+  document.getElementById("c0r2").value = "";
+  document.getElementById("c0r3").value = "";
+
+  document.getElementById("c1r0").value = "";
+  document.getElementById("c1r1").value = "";
+  document.getElementById("c1r2").value = "";
+  document.getElementById("c1r3").value = "";
+
+  document.getElementById("c2r0").value = "";
+  document.getElementById("c2r1").value = "";
+  document.getElementById("c2r2").value = "";
+  document.getElementById("c2r3").value = "";
+
+  document.getElementById("c3r0").value = "";
+  document.getElementById("c3r1").value = "";
+  document.getElementById("c3r2").value = "";
+  document.getElementById("c3r3").value = "";
+  // set sudko = sukuo zero
+}
+
 //function puts the html input from user in correct place in sudoku table
 function inputted_sudoku_table(position, value) {
   //   console.log(position, value); // !delete for testing

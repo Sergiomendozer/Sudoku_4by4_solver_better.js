@@ -4,7 +4,7 @@
     <h1 class="title">Detective Sudoku Solver 4x4</h1>
   </div>
   <div class="game">
-    <div class="digits">
+    <div id = "table"class="digits">
         <!-- column 0 -->
         <!-- id ="c0r0"  -->
       <input maxlength="1" type="number" min="1" max="4" id ="c0r0" onchange="get_value(event, id)"></input>
@@ -44,7 +44,8 @@
     </div>
     <div>
     <button id = "submit" type="button">Submit to Detective</button>
-    <button id = "clear" type="button">Clear all</button>
+    <!-- <input type="reset" value="Reset the form"> -->
+    <button id = "clear" type="button" onclick="clear_all()">Clear all</button>
     <button id = "demo" type="button">example 1</button>
     <button id = "demo" type="button">example 2</button>
     <button id = "demo" type="button">example 3</button>
