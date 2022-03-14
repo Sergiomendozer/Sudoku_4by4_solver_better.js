@@ -1,4 +1,4 @@
-var sudoku_0 = [
+var sudoku_reset = [
   [0, 0, 0, 0],
   [0, 0, 0, 0],
   [0, 0, 0, 0],
@@ -13,7 +13,7 @@ var sudoku_table = [
 
 var c0r0 = null;
 var value = null;
-
+// function resets table and clears user inputs
 function clear_all() {
   console.log("clear table test");
   document.getElementById("c0r0").value = "";
@@ -35,7 +35,8 @@ function clear_all() {
   document.getElementById("c3r1").value = "";
   document.getElementById("c3r2").value = "";
   document.getElementById("c3r3").value = "";
-  // set sudko = sukuo zero
+  sudoku_table = sudoku_reset;
+  console.table(sudoku_table);
 }
 
 //function puts the html input from user in correct place in sudoku table
