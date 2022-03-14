@@ -13,8 +13,10 @@ var sudoku_table = [
 
 var c0r0 = null;
 var value = null;
+
+//function puts the html input from user in correct place in sudoku table
 function inputted_sudoku_table(position, value) {
-  console.log(position, value);
+  //   console.log(position, value); // !delete for testing
   if (position == "c0r0") {
     sudoku_table[0][0] = parseInt(value);
   } else if (position == "c0r1") {
@@ -50,6 +52,7 @@ function inputted_sudoku_table(position, value) {
   }
   console.table(sudoku_table);
 }
+// function grabs value form html that is inputted by user
 function get_value(event, id) {
   var position = id;
   value = document.getElementById(id).value;

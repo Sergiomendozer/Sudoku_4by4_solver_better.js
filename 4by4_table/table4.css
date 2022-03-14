@@ -9,7 +9,7 @@ body {
 }
 
 #header {
-  border: 7px solid white;
+  border: 2px solid white;
 }
 
 .icon {
@@ -75,4 +75,16 @@ h1 {
   line-height: 2.5em;
   color: rgb(0, 0, 0);
   position: relative;
+}
+#submit {
+  background-color: aqua;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+#clear {
+  background-color: #ff4819;
+}
+#demo {
+  background-color: #2aff00;
 }
