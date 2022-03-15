@@ -1,8 +1,11 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
+  /* grid-template-columns: 3;
+  grid-template-rows: 3; */
   background-color: rgb(255, 255, 255);
   gap: none;
+
   /* padding: 1px; */
 }
 
@@ -80,3 +83,6 @@
   float: right;
   border: 12px solid rgb(0, 0, 0);
 } */
+#link {
+  text-align: center;
+}
