@@ -262,16 +262,37 @@ function find_empty_space(table) {
     table[2].indexOf(0) == -1 &&
     table[3].indexOf(0) == -1
   ) {
+    //below updates string in html //! delete
+    // var first_col = table[0];
+    // var second_col = table[1];
+    // var third_col = table[2];
+    // var forth_col = table[3];
+    // document.getElementById("table_1").innerHTML = first_col;
+    // document.getElementById("table_2").innerHTML = second_col;
+    // document.getElementById("table_3").innerHTML = third_col;
+    // document.getElementById("table_4").innerHTML = forth_col;
+    //!delete
+    document.getElementById("c0r0").value = table[0][0];
+    document.getElementById("c0r1").value = table[0][1];
+    document.getElementById("c0r2").value = table[0][2];
+    document.getElementById("c0r3").value = table[0][3];
+
+    document.getElementById("c1r0").value = table[1][0];
+    document.getElementById("c1r1").value = table[1][1];
+    document.getElementById("c1r2").value = table[1][2];
+    document.getElementById("c1r3").value = table[1][3];
+
+    document.getElementById("c2r0").value = table[2][0];
+    document.getElementById("c2r1").value = table[2][1];
+    document.getElementById("c2r2").value = table[2][2];
+    document.getElementById("c2r3").value = table[2][3];
+
+    document.getElementById("c3r0").value = table[3][0];
+    document.getElementById("c3r1").value = table[3][1];
+    document.getElementById("c3r2").value = table[3][2];
+    document.getElementById("c3r3").value = table[3][3];
+    console.table(sudoku_table);
     console.log("Detective Sudoku Solver has solved your table");
-    //below updates string in html
-    var first_col = table[0];
-    var second_col = table[1];
-    var third_col = table[2];
-    var forth_col = table[3];
-    document.getElementById("table_1").innerHTML = first_col;
-    document.getElementById("table_2").innerHTML = second_col;
-    document.getElementById("table_3").innerHTML = third_col;
-    document.getElementById("table_4").innerHTML = forth_col;
     return true;
   }
   //for loops go through 1-4
