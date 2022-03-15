@@ -1,30 +1,27 @@
-var c0r0 = null;
-var value = null;
-// function resets table and clears user inputs
-function clear_all() {
-  console.log("clear table test");
-  document.getElementById("c0r0").value = "";
-  document.getElementById("c0r1").value = "";
-  document.getElementById("c0r2").value = "";
-  document.getElementById("c0r3").value = "";
+// function clear_all() {
+//   console.log("clear table test");
+//   document.getElementById("c0r0").value = "";
+//   document.getElementById("c0r1").value = "";
+//   document.getElementById("c0r2").value = "";
+//   document.getElementById("c0r3").value = "";
 
-  document.getElementById("c1r0").value = "";
-  document.getElementById("c1r1").value = "";
-  document.getElementById("c1r2").value = "";
-  document.getElementById("c1r3").value = "";
+//   document.getElementById("c1r0").value = "";
+//   document.getElementById("c1r1").value = "";
+//   document.getElementById("c1r2").value = "";
+//   document.getElementById("c1r3").value = "";
 
-  document.getElementById("c2r0").value = "";
-  document.getElementById("c2r1").value = "";
-  document.getElementById("c2r2").value = "";
-  document.getElementById("c2r3").value = "";
+//   document.getElementById("c2r0").value = "";
+//   document.getElementById("c2r1").value = "";
+//   document.getElementById("c2r2").value = "";
+//   document.getElementById("c2r3").value = "";
 
-  document.getElementById("c3r0").value = "";
-  document.getElementById("c3r1").value = "";
-  document.getElementById("c3r2").value = "";
-  document.getElementById("c3r3").value = "";
-  sudoku_table = sudoku_reset;
-  console.table(sudoku_table);
-}
+//   document.getElementById("c3r0").value = "";
+//   document.getElementById("c3r1").value = "";
+//   document.getElementById("c3r2").value = "";
+//   document.getElementById("c3r3").value = "";
+//   sudoku_table = sudoku_reset;
+//   console.table(sudoku_table);
+// }
 
 function example_1() {
   console.log("example_1"); // !delete for testing
@@ -153,44 +150,44 @@ function example_5() {
   console.table(sudoku_table);
 }
 
-//function puts the html input from user in correct place in sudoku table
-function inputted_sudoku_table(position, value) {
-  //   console.log(position, value); // !delete for testing
-  if (position == "c0r0") {
-    sudoku_table[0][0] = parseInt(value);
-  } else if (position == "c0r1") {
-    sudoku_table[0][1] = parseInt(value);
-  } else if (position == "c0r2") {
-    sudoku_table[0][2] = parseInt(value);
-  } else if (position == "c0r3") {
-    sudoku_table[0][3] = parseInt(value);
-  } else if (position == "c1r0") {
-    sudoku_table[1][0] = parseInt(value);
-  } else if (position == "c1r1") {
-    sudoku_table[1][1] = parseInt(value);
-  } else if (position == "c1r2") {
-    sudoku_table[1][2] = parseInt(value);
-  } else if (position == "c1r3") {
-    sudoku_table[1][3] = parseInt(value);
-  } else if (position == "c2r0") {
-    sudoku_table[2][0] = parseInt(value);
-  } else if (position == "c2r1") {
-    sudoku_table[2][1] = parseInt(value);
-  } else if (position == "c2r2") {
-    sudoku_table[2][2] = parseInt(value);
-  } else if (position == "c2r3") {
-    sudoku_table[2][3] = parseInt(value);
-  } else if (position == "c3r0") {
-    sudoku_table[3][0] = parseInt(value);
-  } else if (position == "c3r1") {
-    sudoku_table[3][1] = parseInt(value);
-  } else if (position == "c3r2") {
-    sudoku_table[3][2] = parseInt(value);
-  } else if (position == "c3r3") {
-    sudoku_table[3][3] = parseInt(value);
-  }
-  console.table(sudoku_table);
-}
+// //function puts the html input from user in correct place in sudoku table
+// function inputted_sudoku_table(position, value) {
+//   //   console.log(position, value); // !delete for testing
+//   if (position == "c0r0") {
+//     sudoku_table[0][0] = parseInt(value);
+//   } else if (position == "c0r1") {
+//     sudoku_table[0][1] = parseInt(value);
+//   } else if (position == "c0r2") {
+//     sudoku_table[0][2] = parseInt(value);
+//   } else if (position == "c0r3") {
+//     sudoku_table[0][3] = parseInt(value);
+//   } else if (position == "c1r0") {
+//     sudoku_table[1][0] = parseInt(value);
+//   } else if (position == "c1r1") {
+//     sudoku_table[1][1] = parseInt(value);
+//   } else if (position == "c1r2") {
+//     sudoku_table[1][2] = parseInt(value);
+//   } else if (position == "c1r3") {
+//     sudoku_table[1][3] = parseInt(value);
+//   } else if (position == "c2r0") {
+//     sudoku_table[2][0] = parseInt(value);
+//   } else if (position == "c2r1") {
+//     sudoku_table[2][1] = parseInt(value);
+//   } else if (position == "c2r2") {
+//     sudoku_table[2][2] = parseInt(value);
+//   } else if (position == "c2r3") {
+//     sudoku_table[2][3] = parseInt(value);
+//   } else if (position == "c3r0") {
+//     sudoku_table[3][0] = parseInt(value);
+//   } else if (position == "c3r1") {
+//     sudoku_table[3][1] = parseInt(value);
+//   } else if (position == "c3r2") {
+//     sudoku_table[3][2] = parseInt(value);
+//   } else if (position == "c3r3") {
+//     sudoku_table[3][3] = parseInt(value);
+//   }
+//   console.table(sudoku_table);
+// }
 // function grabs value form html that is inputted by user
 function get_value(event, id) {
   var position = id;

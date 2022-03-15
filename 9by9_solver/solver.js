@@ -97,3 +97,59 @@ var sudoku_ex7 = [
   [1, 0, 8, 0, 7, 0, 0, 4, 6],
   [5, 0, 0, 2, 0, 0, 0, 2, 0],
 ];
+var value = null;
+// function resets table and clears user inputs
+function clear_all() {
+  console.log("clear table test");
+  document.getElementById("t1c0r0").value = "";
+  document.getElementById("t1c0r1").value = "";
+  document.getElementById("t1c0r2").value = "";
+
+  document.getElementById("t1c1r0").value = "";
+  document.getElementById("t1c1r1").value = "";
+  document.getElementById("t1c1r2").value = "";
+
+  document.getElementById("t1c2r0").value = "";
+  document.getElementById("t1c2r1").value = "";
+  document.getElementById("t1c2r2").value = "";
+
+  sudoku_table = sudoku_reset;
+  console.table(sudoku_table);
+}
+//function puts the html input from user in correct place in sudoku table
+function inputted_sudoku_table(position, value) {
+  //   console.log(position, value); // !delete for testing
+  //! here
+  if (position == "t1c0r0") {
+    sudoku_table[0][0] = parseInt(value);
+  } else if (position == "t1c0r1") {
+    sudoku_table[0][1] = parseInt(value);
+  } else if (position == "t1c0r2") {
+    sudoku_table[0][2] = parseInt(value);
+  } else if (position == "t1c1r0") {
+    sudoku_table[1][0] = parseInt(value);
+  } else if (position == "t1c1r1") {
+    sudoku_table[1][1] = parseInt(value);
+  } else if (position == "t1c1r2") {
+    sudoku_table[1][2] = parseInt(value);
+  } else if (position == "t1c2r0") {
+    sudoku_table[2][0] = parseInt(value);
+  } else if (position == "t1c2r1") {
+    sudoku_table[2][1] = parseInt(value);
+  } else if (position == "t1c2r2") {
+    sudoku_table[2][2] = parseInt(value);
+  } //
+}
+// function grabs value form html that is inputted by user
+function get_value(event, id) {
+  console.log(id); //!for testing
+  var position = id;
+  value = document.getElementById(id).value;
+  if (value.length <= 0) {
+    var value = 0;
+    console.log("set to zero");
+    console.log(position + value);
+  }
+  console.log(value);
+  return inputted_sudoku_table(position, value);
+}
