@@ -1,19 +1,10 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  /* grid-template-columns: 3;
-  grid-template-rows: 3; */
   background-color: rgb(255, 255, 255);
   gap: none;
   column-gap: 0px;
-
-  /* padding: 1px; */
 }
-
-/* .game {
-  background-color: rgba(0, 0, 0, 1);
-  padding: 1px;
-} */
 
 .game .digits {
   box-sizing: border-box;
@@ -27,14 +18,12 @@
 }
 
 .game .digits span {
-  /* box-sizing: border-box; */
   width: 35px;
   height: 35px;
   background-color: silver;
   font-size: 30px;
   font-family: sans-serif;
   text-align: center;
-  /* line-height: 2.5em; */
   color: rgb(0, 0, 0);
   position: relative;
 }
@@ -76,18 +65,9 @@
   grid-template-columns: auto auto auto auto auto auto auto auto;
   background-color: rgb(255, 255, 255);
 }
-/* auto auto auto auto auto auto auto auto; */
-/* .right_side {
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  float: right;
-  border: 12px solid rgb(0, 0, 0);
-} */
 #link {
   text-align: center;
 }
 .title {
   font-family: Brush Script MT;
-  /* font-size: 25px; */
 }
