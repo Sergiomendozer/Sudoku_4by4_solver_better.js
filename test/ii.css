@@ -1,0 +1,75 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(255, 255, 255);
+  gap: none;
+  /* padding: 1px; */
+}
+
+/* .game {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 1px;
+} */
+
+.game .digits {
+  box-sizing: border-box;
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+  border: 5px solid rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+
+.game .digits span {
+  /* box-sizing: border-box; */
+  width: 35px;
+  height: 35px;
+  background-color: silver;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  /* line-height: 2.5em; */
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.game .digits input {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background-color: silver;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 2em;
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+#submit {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3;
+}
+#clear {
+  background-color: #ff4819;
+  margin: 3;
+}
+#demo {
+  background-color: #2aff00;
+  margin: 2;
+}
+#header {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(255, 255, 255);
+/* .right_side {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  border: 12px solid rgb(0, 0, 0);
+} */
