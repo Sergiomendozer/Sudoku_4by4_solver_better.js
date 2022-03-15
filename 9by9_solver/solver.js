@@ -138,7 +138,152 @@ function inputted_sudoku_table(position, value) {
     sudoku_table[2][1] = parseInt(value);
   } else if (position == "t1c2r2") {
     sudoku_table[2][2] = parseInt(value);
-  } //
+  } else if (position == "t2c0r0") {
+    sudoku_table[0][3] = parseInt(value);
+  } else if (position == "t2c0r1") {
+    sudoku_table[0][4] = parseInt(value);
+  } else if (position == "t2c0r2") {
+    sudoku_table[0][5] = parseInt(value);
+  } else if (position == "t2c1r0") {
+    sudoku_table[1][3] = parseInt(value);
+  } else if (position == "t2c1r1") {
+    sudoku_table[1][4] = parseInt(value);
+  } else if (position == "t2c1r2") {
+    sudoku_table[1][5] = parseInt(value);
+  } else if (position == "t2c2r0") {
+    sudoku_table[2][3] = parseInt(value);
+  } else if (position == "t2c2r1") {
+    sudoku_table[2][4] = parseInt(value);
+  } else if (position == "t2c2r2") {
+    sudoku_table[2][5] = parseInt(value);
+  } else if (position == "t3c0r0") {
+    sudoku_table[0][6] = parseInt(value);
+  } else if (position == "t3c0r1") {
+    sudoku_table[0][7] = parseInt(value);
+  } else if (position == "t3c0r2") {
+    sudoku_table[0][8] = parseInt(value);
+  } else if (position == "t3c1r0") {
+    sudoku_table[1][6] = parseInt(value);
+  } else if (position == "t3c1r1") {
+    sudoku_table[1][7] = parseInt(value);
+  } else if (position == "t3c1r2") {
+    sudoku_table[1][8] = parseInt(value);
+  } else if (position == "t3c2r0") {
+    sudoku_table[2][6] = parseInt(value);
+  } else if (position == "t3c2r1") {
+    sudoku_table[2][7] = parseInt(value);
+  } else if (position == "t3c2r2") {
+    sudoku_table[2][8] = parseInt(value);
+  } else if (position == "t4c0r0") {
+    sudoku_table[3][0] = parseInt(value);
+  } else if (position == "t4c0r1") {
+    sudoku_table[3][1] = parseInt(value);
+  } else if (position == "t4c0r2") {
+    sudoku_table[3][2] = parseInt(value);
+  } else if (position == "t4c1r0") {
+    sudoku_table[4][0] = parseInt(value);
+  } else if (position == "t4c1r1") {
+    sudoku_table[4][1] = parseInt(value);
+  } else if (position == "t4c1r2") {
+    sudoku_table[4][2] = parseInt(value);
+  } else if (position == "t4c2r0") {
+    sudoku_table[5][0] = parseInt(value);
+  } else if (position == "t4c2r1") {
+    sudoku_table[5][1] = parseInt(value);
+  } else if (position == "t4c2r2") {
+    sudoku_table[5][2] = parseInt(value);
+  } else if (position == "t5c0r0") {
+    sudoku_table[3][3] = parseInt(value);
+  } else if (position == "t5c0r1") {
+    sudoku_table[3][4] = parseInt(value);
+  } else if (position == "t5c0r2") {
+    sudoku_table[3][5] = parseInt(value);
+  } else if (position == "t5c1r0") {
+    sudoku_table[4][3] = parseInt(value);
+  } else if (position == "t5c1r1") {
+    sudoku_table[4][4] = parseInt(value);
+  } else if (position == "t5c1r2") {
+    sudoku_table[4][5] = parseInt(value);
+  } else if (position == "t5c2r0") {
+    sudoku_table[5][3] = parseInt(value);
+  } else if (position == "t5c2r1") {
+    sudoku_table[5][4] = parseInt(value);
+  } else if (position == "t5c2r2") {
+    sudoku_table[5][5] = parseInt(value);
+  } else if (position == "t6c0r0") {
+    sudoku_table[3][6] = parseInt(value);
+  } else if (position == "t6c0r1") {
+    sudoku_table[3][7] = parseInt(value);
+  } else if (position == "t6c0r2") {
+    sudoku_table[3][8] = parseInt(value);
+  } else if (position == "t6c1r0") {
+    sudoku_table[4][6] = parseInt(value);
+  } else if (position == "t6c1r1") {
+    sudoku_table[4][7] = parseInt(value);
+  } else if (position == "t6c1r2") {
+    sudoku_table[4][8] = parseInt(value);
+  } else if (position == "t6c2r0") {
+    sudoku_table[5][6] = parseInt(value);
+  } else if (position == "t6c2r1") {
+    sudoku_table[5][7] = parseInt(value);
+  } else if (position == "t6c2r2") {
+    sudoku_table[5][8] = parseInt(value);
+  } else if (position == "t7c0r0") {
+    sudoku_table[6][0] = parseInt(value);
+  } else if (position == "t7c0r1") {
+    sudoku_table[6][1] = parseInt(value);
+  } else if (position == "t7c0r2") {
+    sudoku_table[6][2] = parseInt(value);
+  } else if (position == "t7c1r0") {
+    sudoku_table[7][0] = parseInt(value);
+  } else if (position == "t7c1r1") {
+    sudoku_table[7][1] = parseInt(value);
+  } else if (position == "t7c1r2") {
+    sudoku_table[7][2] = parseInt(value);
+  } else if (position == "t7c2r0") {
+    sudoku_table[8][0] = parseInt(value);
+  } else if (position == "t7c2r1") {
+    sudoku_table[8][1] = parseInt(value);
+  } else if (position == "t7c2r2") {
+    sudoku_table[8][2] = parseInt(value);
+  } else if (position == "t8c0r0") {
+    sudoku_table[6][3] = parseInt(value);
+  } else if (position == "t8c0r1") {
+    sudoku_table[6][4] = parseInt(value);
+  } else if (position == "t8c0r2") {
+    sudoku_table[6][5] = parseInt(value);
+  } else if (position == "t8c1r0") {
+    sudoku_table[7][3] = parseInt(value);
+  } else if (position == "t8c1r1") {
+    sudoku_table[7][4] = parseInt(value);
+  } else if (position == "t8c1r2") {
+    sudoku_table[7][5] = parseInt(value);
+  } else if (position == "t8c2r0") {
+    sudoku_table[8][3] = parseInt(value);
+  } else if (position == "t8c2r1") {
+    sudoku_table[8][4] = parseInt(value);
+  } else if (position == "t8c2r2") {
+    sudoku_table[8][5] = parseInt(value);
+  } else if (position == "t9c0r0") {
+    sudoku_table[6][6] = parseInt(value);
+  } else if (position == "t9c0r1") {
+    sudoku_table[6][7] = parseInt(value);
+  } else if (position == "t9c0r2") {
+    sudoku_table[6][8] = parseInt(value);
+  } else if (position == "t9c1r0") {
+    sudoku_table[7][6] = parseInt(value);
+  } else if (position == "t9c1r1") {
+    sudoku_table[7][7] = parseInt(value);
+  } else if (position == "t9c1r2") {
+    sudoku_table[7][8] = parseInt(value);
+  } else if (position == "t9c2r0") {
+    sudoku_table[8][6] = parseInt(value);
+  } else if (position == "t9c2r1") {
+    sudoku_table[8][7] = parseInt(value);
+  } else if (position == "t9c2r2") {
+    sudoku_table[8][8] = parseInt(value);
+  }
+  console.table(sudoku_table);
 }
 // function grabs value form html that is inputted by user
 function get_value(event, id) {
