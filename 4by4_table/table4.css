@@ -7,10 +7,9 @@ body {
   background: white;
   overflow: hidden;
 }
-
-#header {
-  border: 2px solid white;
-}
+/* #header {
+    border: 2px solid white;
+  } */
 
 .icon {
   margin-left: 0%;
@@ -21,7 +20,7 @@ body {
 
 .title {
   font-family: Brush Script MT;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .app {
