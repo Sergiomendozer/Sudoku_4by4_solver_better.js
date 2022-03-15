@@ -63,9 +63,16 @@
   margin: 2;
 }
 #header {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgb(255, 255, 255);
+}
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: rgb(255, 255, 255);
+}
+/* auto auto auto auto auto auto auto auto; */
 /* .right_side {
   width: 150px;
   display: flex;
