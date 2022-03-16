@@ -786,8 +786,8 @@ function puzzle_7() {
   console.log("puzzle_7"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
-  document.getElementById("t1c0r1").value = "";
-  document.getElementById("t1c0r2").value = "";
+  document.getElementById("t1c0r1").value = "5";
+  document.getElementById("t1c0r2").value = "7";
 
   document.getElementById("t1c1r0").value = "";
   document.getElementById("t1c1r1").value = "";
@@ -795,41 +795,41 @@ function puzzle_7() {
 
   document.getElementById("t1c2r0").value = "";
   document.getElementById("t1c2r1").value = "";
-  document.getElementById("t1c2r2").value = "";
+  document.getElementById("t1c2r2").value = "2";
 
-  document.getElementById("t2c0r0").value = "";
-  document.getElementById("t2c0r1").value = "";
+  document.getElementById("t2c0r0").value = "1";
+  document.getElementById("t2c0r1").value = "4";
   document.getElementById("t2c0r2").value = "";
 
-  document.getElementById("t2c1r0").value = "";
-  document.getElementById("t2c1r1").value = "";
+  document.getElementById("t2c1r0").value = "7";
+  document.getElementById("t2c1r1").value = "8";
   document.getElementById("t2c1r2").value = "";
 
   document.getElementById("t2c2r0").value = "";
   document.getElementById("t2c2r1").value = "";
-  document.getElementById("t2c2r2").value = "";
+  document.getElementById("t2c2r2").value = "3";
 
-  document.getElementById("t3c0r0").value = "";
+  document.getElementById("t3c0r0").value = "8";
   document.getElementById("t3c0r1").value = "";
   document.getElementById("t3c0r2").value = "";
 
   document.getElementById("t3c1r0").value = "";
-  document.getElementById("t3c1r1").value = "";
-  document.getElementById("t3c1r2").value = "";
+  document.getElementById("t3c1r1").value = "6";
+  document.getElementById("t3c1r2").value = "5";
 
   document.getElementById("t3c2r0").value = "";
   document.getElementById("t3c2r1").value = "";
-  document.getElementById("t3c2r2").value = "";
+  document.getElementById("t3c2r2").value = "4";
 
   document.getElementById("t4c0r0").value = "";
-  document.getElementById("t4c0r1").value = "";
+  document.getElementById("t4c0r1").value = "9";
   document.getElementById("t4c0r2").value = "";
 
   document.getElementById("t4c1r0").value = "";
-  document.getElementById("t4c1r1").value = "";
-  document.getElementById("t4c1r2").value = "";
+  document.getElementById("t4c1r1").value = "3";
+  document.getElementById("t4c1r2").value = "8";
 
-  document.getElementById("t4c2r0").value = "";
+  document.getElementById("t4c2r0").value = "7";
   document.getElementById("t4c2r1").value = "";
   document.getElementById("t4c2r2").value = "";
 
@@ -838,60 +838,60 @@ function puzzle_7() {
   document.getElementById("t5c0r2").value = "";
 
   document.getElementById("t5c1r0").value = "";
-  document.getElementById("t5c1r1").value = "";
+  document.getElementById("t5c1r1").value = "1";
   document.getElementById("t5c1r2").value = "";
 
   document.getElementById("t5c2r0").value = "";
-  document.getElementById("t5c2r1").value = "";
+  document.getElementById("t5c2r1").value = "3";
   document.getElementById("t5c2r2").value = "";
 
-  document.getElementById("t6c0r0").value = "";
+  document.getElementById("t6c0r0").value = "3";
   document.getElementById("t6c0r1").value = "";
-  document.getElementById("t6c0r2").value = "";
+  document.getElementById("t6c0r2").value = "6";
 
-  document.getElementById("t6c1r0").value = "";
-  document.getElementById("t6c1r1").value = "";
+  document.getElementById("t6c1r0").value = "4";
+  document.getElementById("t6c1r1").value = "2";
   document.getElementById("t6c1r2").value = "";
 
   document.getElementById("t6c2r0").value = "";
-  document.getElementById("t6c2r1").value = "";
+  document.getElementById("t6c2r1").value = "8";
   document.getElementById("t6c2r2").value = "";
 
   document.getElementById("t7c0r0").value = "";
   document.getElementById("t7c0r1").value = "";
-  document.getElementById("t7c0r2").value = "";
+  document.getElementById("t7c0r2").value = "9";
 
-  document.getElementById("t7c1r0").value = "";
-  document.getElementById("t7c1r1").value = "";
+  document.getElementById("t7c1r0").value = "6";
+  document.getElementById("t7c1r1").value = "1";
   document.getElementById("t7c1r2").value = "";
 
   document.getElementById("t7c2r0").value = "";
   document.getElementById("t7c2r1").value = "";
-  document.getElementById("t7c2r2").value = "";
+  document.getElementById("t7c2r2").value = "4";
 
   document.getElementById("t8c0r0").value = "";
   document.getElementById("t8c0r1").value = "";
-  document.getElementById("t8c0r2").value = "";
+  document.getElementById("t8c0r2").value = "8";
 
   document.getElementById("t8c1r0").value = "";
   document.getElementById("t8c1r1").value = "";
-  document.getElementById("t8c1r2").value = "";
+  document.getElementById("t8c1r2").value = "9";
 
-  document.getElementById("t8c2r0").value = "";
-  document.getElementById("t8c2r1").value = "";
+  document.getElementById("t8c2r0").value = "2";
+  document.getElementById("t8c2r1").value = "5";
   document.getElementById("t8c2r2").value = "";
 
   document.getElementById("t9c0r0").value = "";
-  document.getElementById("t9c0r1").value = "";
-  document.getElementById("t9c0r2").value = "";
+  document.getElementById("t9c0r1").value = "5";
+  document.getElementById("t9c0r2").value = "3";
 
-  document.getElementById("t9c1r0").value = "";
+  document.getElementById("t9c1r0").value = "2";
   document.getElementById("t9c1r1").value = "";
   document.getElementById("t9c1r2").value = "";
 
   document.getElementById("t9c2r0").value = "";
-  document.getElementById("t9c2r1").value = "";
-  document.getElementById("t9c2r2").value = "";
+  document.getElementById("t9c2r1").value = "9";
+  document.getElementById("t9c2r2").value = "7";
 
   sudoku_table = sudoku_p7;
   console.table(sudoku_table);
