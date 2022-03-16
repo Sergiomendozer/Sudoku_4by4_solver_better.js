@@ -1208,112 +1208,112 @@ function find_empty_space(table) {
   ) {
     //below updates string in html
     document.getElementById("t1c0r0").value = table[0][0];
-    document.getElementById("t1c0r1").value = "";
-    document.getElementById("t1c0r2").value = "";
+    document.getElementById("t1c0r1").value = table[0][1];
+    document.getElementById("t1c0r2").value = table[0][2];
 
-    document.getElementById("t1c1r0").value = "";
-    document.getElementById("t1c1r1").value = "";
-    document.getElementById("t1c1r2").value = "";
+    document.getElementById("t1c1r0").value = table[0][3];
+    document.getElementById("t1c1r1").value = table[0][4];
+    document.getElementById("t1c1r2").value = table[0][5];
 
-    document.getElementById("t1c2r0").value = "";
-    document.getElementById("t1c2r1").value = "";
-    document.getElementById("t1c2r2").value = "";
+    document.getElementById("t1c2r0").value = table[0][6];
+    document.getElementById("t1c2r1").value = table[0][7];
+    document.getElementById("t1c2r2").value = table[0][8];
 
-    document.getElementById("t2c0r0").value = "";
-    document.getElementById("t2c0r1").value = "";
-    document.getElementById("t2c0r2").value = "";
+    document.getElementById("t2c0r0").value = table[1][0];
+    document.getElementById("t2c0r1").value = table[1][1];
+    document.getElementById("t2c0r2").value = table[1][2];
 
-    document.getElementById("t2c1r0").value = "";
-    document.getElementById("t2c1r1").value = "";
-    document.getElementById("t2c1r2").value = "";
+    document.getElementById("t2c1r0").value = table[1][3];
+    document.getElementById("t2c1r1").value = table[1][4];
+    document.getElementById("t2c1r2").value = table[1][5];
 
-    document.getElementById("t2c2r0").value = "";
-    document.getElementById("t2c2r1").value = "";
-    document.getElementById("t2c2r2").value = "";
+    document.getElementById("t2c2r0").value = table[1][6];
+    document.getElementById("t2c2r1").value = table[1][7];
+    document.getElementById("t2c2r2").value = table[1][8];
 
-    document.getElementById("t3c0r0").value = "";
-    document.getElementById("t3c0r1").value = "";
-    document.getElementById("t3c0r2").value = "";
+    document.getElementById("t3c0r0").value = table[2][0];
+    document.getElementById("t3c0r1").value = table[2][1];
+    document.getElementById("t3c0r2").value = table[2][2];
 
-    document.getElementById("t3c1r0").value = "";
-    document.getElementById("t3c1r1").value = "";
-    document.getElementById("t3c1r2").value = "";
+    document.getElementById("t3c1r0").value = table[2][3];
+    document.getElementById("t3c1r1").value = table[2][4];
+    document.getElementById("t3c1r2").value = table[2][5];
 
-    document.getElementById("t3c2r0").value = "";
-    document.getElementById("t3c2r1").value = "";
-    document.getElementById("t3c2r2").value = "";
+    document.getElementById("t3c2r0").value = table[2][6];
+    document.getElementById("t3c2r1").value = table[2][7];
+    document.getElementById("t3c2r2").value = table[2][8];
 
-    document.getElementById("t4c0r0").value = "";
-    document.getElementById("t4c0r1").value = "";
-    document.getElementById("t4c0r2").value = "";
+    document.getElementById("t4c0r0").value = table[3][0];
+    document.getElementById("t4c0r1").value = table[3][1];
+    document.getElementById("t4c0r2").value = table[3][2];
 
-    document.getElementById("t4c1r0").value = "";
-    document.getElementById("t4c1r1").value = "";
-    document.getElementById("t4c1r2").value = "";
+    document.getElementById("t4c1r0").value = table[3][3];
+    document.getElementById("t4c1r1").value = table[3][4];
+    document.getElementById("t4c1r2").value = table[3][5];
 
-    document.getElementById("t4c2r0").value = "";
-    document.getElementById("t4c2r1").value = "";
-    document.getElementById("t4c2r2").value = "";
+    document.getElementById("t4c2r0").value = table[3][6];
+    document.getElementById("t4c2r1").value = table[3][7];
+    document.getElementById("t4c2r2").value = table[3][8];
 
-    document.getElementById("t5c0r0").value = "";
-    document.getElementById("t5c0r1").value = "";
-    document.getElementById("t5c0r2").value = "";
+    document.getElementById("t5c0r0").value = table[4][0];
+    document.getElementById("t5c0r1").value = table[4][1];
+    document.getElementById("t5c0r2").value = table[4][2];
 
-    document.getElementById("t5c1r0").value = "";
-    document.getElementById("t5c1r1").value = "";
-    document.getElementById("t5c1r2").value = "";
+    document.getElementById("t5c1r0").value = table[4][3];
+    document.getElementById("t5c1r1").value = table[4][4];
+    document.getElementById("t5c1r2").value = table[4][5];
 
-    document.getElementById("t5c2r0").value = "";
-    document.getElementById("t5c2r1").value = "";
-    document.getElementById("t5c2r2").value = "";
+    document.getElementById("t5c2r0").value = table[4][6];
+    document.getElementById("t5c2r1").value = table[4][7];
+    document.getElementById("t5c2r2").value = table[4][8];
 
-    document.getElementById("t6c0r0").value = "";
-    document.getElementById("t6c0r1").value = "";
-    document.getElementById("t6c0r2").value = "";
+    document.getElementById("t6c0r0").value = table[5][0];
+    document.getElementById("t6c0r1").value = table[5][1];
+    document.getElementById("t6c0r2").value = table[5][2];
 
-    document.getElementById("t6c1r0").value = "";
-    document.getElementById("t6c1r1").value = "";
-    document.getElementById("t6c1r2").value = "";
+    document.getElementById("t6c1r0").value = table[5][3];
+    document.getElementById("t6c1r1").value = table[5][4];
+    document.getElementById("t6c1r2").value = table[5][5];
 
-    document.getElementById("t6c2r0").value = "";
-    document.getElementById("t6c2r1").value = "";
-    document.getElementById("t6c2r2").value = "";
+    document.getElementById("t6c2r0").value = table[5][6];
+    document.getElementById("t6c2r1").value = table[5][7];
+    document.getElementById("t6c2r2").value = table[5][8];
 
-    document.getElementById("t7c0r0").value = "";
-    document.getElementById("t7c0r1").value = "";
-    document.getElementById("t7c0r2").value = "";
+    document.getElementById("t7c0r0").value = table[6][0];
+    document.getElementById("t7c0r1").value = table[6][1];
+    document.getElementById("t7c0r2").value = table[6][2];
 
-    document.getElementById("t7c1r0").value = "";
-    document.getElementById("t7c1r1").value = "";
-    document.getElementById("t7c1r2").value = "";
+    document.getElementById("t7c1r0").value = table[6][3];
+    document.getElementById("t7c1r1").value = table[6][4];
+    document.getElementById("t7c1r2").value = table[6][5];
 
-    document.getElementById("t7c2r0").value = "";
-    document.getElementById("t7c2r1").value = "";
-    document.getElementById("t7c2r2").value = "";
+    document.getElementById("t7c2r0").value = table[6][6];
+    document.getElementById("t7c2r1").value = table[6][7];
+    document.getElementById("t7c2r2").value = table[6][8];
 
-    document.getElementById("t8c0r0").value = "";
-    document.getElementById("t8c0r1").value = "";
-    document.getElementById("t8c0r2").value = "";
+    document.getElementById("t8c0r0").value = table[7][0];
+    document.getElementById("t8c0r1").value = table[7][1];
+    document.getElementById("t8c0r2").value = table[7][2];
 
-    document.getElementById("t8c1r0").value = "";
-    document.getElementById("t8c1r1").value = "";
-    document.getElementById("t8c1r2").value = "";
+    document.getElementById("t8c1r0").value = table[7][3];
+    document.getElementById("t8c1r1").value = table[7][4];
+    document.getElementById("t8c1r2").value = table[7][5];
 
-    document.getElementById("t8c2r0").value = "";
-    document.getElementById("t8c2r1").value = "";
-    document.getElementById("t8c2r2").value = "";
+    document.getElementById("t8c2r0").value = table[7][6];
+    document.getElementById("t8c2r1").value = table[7][7];
+    document.getElementById("t8c2r2").value = table[7][8];
 
-    document.getElementById("t9c0r0").value = "";
-    document.getElementById("t9c0r1").value = "";
-    document.getElementById("t9c0r2").value = "";
+    document.getElementById("t9c0r0").value = table[8][0];
+    document.getElementById("t9c0r1").value = table[8][1];
+    document.getElementById("t9c0r2").value = table[8][2];
 
-    document.getElementById("t9c1r0").value = "";
-    document.getElementById("t9c1r1").value = "";
-    document.getElementById("t9c1r2").value = "";
+    document.getElementById("t9c1r0").value = table[8][3];
+    document.getElementById("t9c1r1").value = table[8][4];
+    document.getElementById("t9c1r2").value = table[8][5];
 
-    document.getElementById("t9c2r0").value = "";
-    document.getElementById("t9c2r1").value = "";
-    document.getElementById("t9c2r2").value = "";
+    document.getElementById("t9c2r0").value = table[8][6];
+    document.getElementById("t9c2r1").value = table[8][7];
+    document.getElementById("t9c2r2").value = table[8][8];
     console.log("Detective Sudoku Solver has solved your table");
     console.table(table);
     return true;
