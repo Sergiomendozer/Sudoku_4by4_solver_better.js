@@ -1013,8 +1013,6 @@ function clear_all() {
 }
 //function puts the html input from user in correct place in sudoku table
 function inputted_sudoku_table(position, value) {
-  //   console.log(position, value); // !delete for testing
-  //! here
   if (position == "t1c0r0") {
     sudoku_table[0][0] = parseInt(value);
   } else if (position == "t1c0r1") {
@@ -1210,38 +1208,114 @@ function find_empty_space(table) {
   ) {
     //below updates string in html
     document.getElementById("t1c0r0").value = table[0][0];
-    document.getElementById("t1c0r1").value = table[0][1];
-    document.getElementById("t1c0r2").value = table[0][2];
+    document.getElementById("t1c0r1").value = "";
+    document.getElementById("t1c0r2").value = "";
 
-    document.getElementById("t1c1r0").value = table[1][0];
-    document.getElementById("t1c1r1").value = table[1][1];
-    document.getElementById("c1r2").value = table[1][2];
+    document.getElementById("t1c1r0").value = "";
+    document.getElementById("t1c1r1").value = "";
+    document.getElementById("t1c1r2").value = "";
 
-    document.getElementById("t1c2r0").value = table[2][0];
-    document.getElementById("t1c2r1").value = table[2][1];
-    document.getElementById("t1c2r2").value = table[2][2];
+    document.getElementById("t1c2r0").value = "";
+    document.getElementById("t1c2r1").value = "";
+    document.getElementById("t1c2r2").value = "";
+
+    document.getElementById("t2c0r0").value = "";
+    document.getElementById("t2c0r1").value = "";
+    document.getElementById("t2c0r2").value = "";
+
+    document.getElementById("t2c1r0").value = "";
+    document.getElementById("t2c1r1").value = "";
+    document.getElementById("t2c1r2").value = "";
+
+    document.getElementById("t2c2r0").value = "";
+    document.getElementById("t2c2r1").value = "";
+    document.getElementById("t2c2r2").value = "";
+
+    document.getElementById("t3c0r0").value = "";
+    document.getElementById("t3c0r1").value = "";
+    document.getElementById("t3c0r2").value = "";
+
+    document.getElementById("t3c1r0").value = "";
+    document.getElementById("t3c1r1").value = "";
+    document.getElementById("t3c1r2").value = "";
+
+    document.getElementById("t3c2r0").value = "";
+    document.getElementById("t3c2r1").value = "";
+    document.getElementById("t3c2r2").value = "";
+
+    document.getElementById("t4c0r0").value = "";
+    document.getElementById("t4c0r1").value = "";
+    document.getElementById("t4c0r2").value = "";
+
+    document.getElementById("t4c1r0").value = "";
+    document.getElementById("t4c1r1").value = "";
+    document.getElementById("t4c1r2").value = "";
+
+    document.getElementById("t4c2r0").value = "";
+    document.getElementById("t4c2r1").value = "";
+    document.getElementById("t4c2r2").value = "";
+
+    document.getElementById("t5c0r0").value = "";
+    document.getElementById("t5c0r1").value = "";
+    document.getElementById("t5c0r2").value = "";
+
+    document.getElementById("t5c1r0").value = "";
+    document.getElementById("t5c1r1").value = "";
+    document.getElementById("t5c1r2").value = "";
+
+    document.getElementById("t5c2r0").value = "";
+    document.getElementById("t5c2r1").value = "";
+    document.getElementById("t5c2r2").value = "";
+
+    document.getElementById("t6c0r0").value = "";
+    document.getElementById("t6c0r1").value = "";
+    document.getElementById("t6c0r2").value = "";
+
+    document.getElementById("t6c1r0").value = "";
+    document.getElementById("t6c1r1").value = "";
+    document.getElementById("t6c1r2").value = "";
+
+    document.getElementById("t6c2r0").value = "";
+    document.getElementById("t6c2r1").value = "";
+    document.getElementById("t6c2r2").value = "";
+
+    document.getElementById("t7c0r0").value = "";
+    document.getElementById("t7c0r1").value = "";
+    document.getElementById("t7c0r2").value = "";
+
+    document.getElementById("t7c1r0").value = "";
+    document.getElementById("t7c1r1").value = "";
+    document.getElementById("t7c1r2").value = "";
+
+    document.getElementById("t7c2r0").value = "";
+    document.getElementById("t7c2r1").value = "";
+    document.getElementById("t7c2r2").value = "";
+
+    document.getElementById("t8c0r0").value = "";
+    document.getElementById("t8c0r1").value = "";
+    document.getElementById("t8c0r2").value = "";
+
+    document.getElementById("t8c1r0").value = "";
+    document.getElementById("t8c1r1").value = "";
+    document.getElementById("t8c1r2").value = "";
+
+    document.getElementById("t8c2r0").value = "";
+    document.getElementById("t8c2r1").value = "";
+    document.getElementById("t8c2r2").value = "";
+
+    document.getElementById("t9c0r0").value = "";
+    document.getElementById("t9c0r1").value = "";
+    document.getElementById("t9c0r2").value = "";
+
+    document.getElementById("t9c1r0").value = "";
+    document.getElementById("t9c1r1").value = "";
+    document.getElementById("t9c1r2").value = "";
+
+    document.getElementById("t9c2r0").value = "";
+    document.getElementById("t9c2r1").value = "";
+    document.getElementById("t9c2r2").value = "";
     console.log("Detective Sudoku Solver has solved your table");
     console.table(table);
-    //!   var first_col = table[0];
-    //   var second_col = table[1];
-    //   var third_col = table[2];
-    //   var forth_col = table[3];
-    //   var fifth_col = table[4];
-    //   var sixth_col = table[5];
-    //   var seventh_col = table[6];
-    //   var eighth_col = table[7];
-    //   var ninth_col = table[8];
-    //!
-    //   document.getElementById("table_1").innerHTML = first_col;
-    //   document.getElementById("table_2").innerHTML = second_col;
-    //   document.getElementById("table_3").innerHTML = third_col;
-    //   document.getElementById("table_4").innerHTML = forth_col;
-    //   document.getElementById("table_5").innerHTML = fifth_col;
-    //   document.getElementById("table_6").innerHTML = sixth_col;
-    //   document.getElementById("table_7").innerHTML = seventh_col;
-    //   document.getElementById("table_8").innerHTML = eighth_col;
-    //   document.getElementById("table_9").innerHTML = ninth_col;
-
     return true;
   }
   //for loops go through 1-9
