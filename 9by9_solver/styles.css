@@ -3,9 +3,12 @@
   grid-template-columns: auto auto auto;
   background-color: rgb(255, 255, 255);
   gap: none;
+  max-width: 300px;
   column-gap: 0px;
+  margin: auto;
+  position: center;
+  /* border: 10px solid rgb(0, 0, 0); */
 }
-
 .game .digits {
   box-sizing: border-box;
   width: 140px;
