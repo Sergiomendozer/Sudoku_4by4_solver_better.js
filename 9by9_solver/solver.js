@@ -20,7 +20,7 @@ var sudoku_table = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
-var sudoku_ex1 = [
+var sudoku_p1 = [
   [3, 0, 0, 2, 0, 0, 0, 9, 0],
   [4, 5, 0, 6, 0, 9, 0, 1, 8],
   [7, 0, 6, 0, 0, 3, 4, 0, 0],
@@ -31,7 +31,7 @@ var sudoku_ex1 = [
   [1, 3, 0, 0, 6, 0, 7, 0, 5],
   [0, 2, 0, 0, 8, 0, 0, 0, 0],
 ];
-var sudoku_ex2 = [
+var sudoku_p2 = [
   [0, 0, 0, 0, 0, 4, 0, 0, 3],
   [0, 7, 5, 0, 1, 0, 0, 8, 0],
   [3, 1, 6, 9, 2, 0, 5, 0, 0],
@@ -42,7 +42,7 @@ var sudoku_ex2 = [
   [2, 3, 0, 7, 0, 0, 8, 5, 0],
   [8, 0, 7, 3, 5, 0, 0, 0, 9],
 ];
-var sudoku_ex3 = [
+var sudoku_p3 = [
   [0, 0, 8, 3, 0, 0, 6, 0, 5],
   [0, 7, 2, 0, 5, 0, 0, 0, 4],
   [6, 0, 0, 4, 8, 2, 3, 0, 0],
@@ -53,7 +53,7 @@ var sudoku_ex3 = [
   [0, 8, 0, 0, 0, 9, 4, 1, 0],
   [4, 0, 0, 0, 7, 0, 0, 8, 9],
 ];
-var sudoku_ex4 = [
+var sudoku_p4 = [
   [0, 1, 9, 3, 0, 2, 0, 8, 4],
   [0, 0, 4, 1, 0, 5, 0, 9, 0],
   [5, 8, 0, 0, 6, 0, 7, 0, 0],
@@ -64,7 +64,7 @@ var sudoku_ex4 = [
   [0, 6, 0, 2, 9, 0, 0, 0, 5],
   [0, 0, 7, 0, 0, 3, 0, 0, 0],
 ];
-var sudoku_ex5 = [
+var sudoku_p5 = [
   [2, 7, 0, 0, 0, 0, 1, 8, 0],
   [5, 4, 0, 0, 0, 0, 0, 2, 3],
   [0, 1, 0, 0, 6, 0, 0, 0, 7],
@@ -75,7 +75,7 @@ var sudoku_ex5 = [
   [4, 0, 0, 0, 0, 0, 0, 1, 0],
   [0, 3, 2, 4, 0, 8, 0, 0, 9],
 ];
-var sudoku_ex6 = [
+var sudoku_p6 = [
   [0, 0, 5, 0, 1, 0, 0, 9, 0],
   [0, 4, 0, 6, 3, 0, 0, 0, 5],
   [8, 0, 0, 0, 0, 7, 1, 6, 0],
@@ -86,7 +86,7 @@ var sudoku_ex6 = [
   [0, 5, 6, 0, 0, 2, 0, 3, 1],
   [7, 0, 0, 3, 4, 8, 9, 0, 0],
 ];
-var sudoku_ex7 = [
+var sudoku_p7 = [
   [8, 0, 7, 9, 2, 5, 0, 0, 4],
   [3, 0, 0, 0, 0, 6, 0, 1, 8],
   [0, 6, 9, 1, 8, 0, 2, 0, 7],
@@ -208,7 +208,7 @@ function puzzle_1() {
   document.getElementById("t9c2r1").value = "";
   document.getElementById("t9c2r2").value = "";
 
-  sudoku_table = sudoku_ex1;
+  sudoku_table = sudoku_p1;
   console.table(sudoku_table);
 }
 
@@ -323,7 +323,7 @@ function puzzle_2() {
   document.getElementById("t9c2r1").value = "";
   document.getElementById("t9c2r2").value = "9";
 
-  sudoku_table = sudoku_ex2;
+  sudoku_table = sudoku_p2;
   console.table(sudoku_table);
 }
 function puzzle_3() {
@@ -437,7 +437,7 @@ function puzzle_3() {
   document.getElementById("t9c2r1").value = "8";
   document.getElementById("t9c2r2").value = "9";
 
-  sudoku_table = sudoku_ex3;
+  sudoku_table = sudoku_p3;
   console.table(sudoku_table);
 }
 function puzzle_4() {
@@ -551,7 +551,7 @@ function puzzle_4() {
   document.getElementById("t9c2r1").value = "";
   document.getElementById("t9c2r2").value = "";
 
-  sudoku_table = sudoku_ex4;
+  sudoku_table = sudoku_p4;
   console.table(sudoku_table);
 }
 function puzzle_5() {
@@ -665,7 +665,7 @@ function puzzle_5() {
   document.getElementById("t9c2r1").value = "";
   document.getElementById("t9c2r2").value = "9";
 
-  sudoku_table = sudoku_ex5;
+  sudoku_table = sudoku_p5;
   console.table(sudoku_table);
 }
 function puzzle_6() {
@@ -779,7 +779,7 @@ function puzzle_6() {
   document.getElementById("t9c2r1").value = "";
   document.getElementById("t9c2r2").value = "";
 
-  sudoku_table = sudoku_ex6;
+  sudoku_table = sudoku_p6;
   console.table(sudoku_table);
 }
 function puzzle_7() {
@@ -893,7 +893,7 @@ function puzzle_7() {
   document.getElementById("t9c2r1").value = "2";
   document.getElementById("t9c2r2").value = "";
 
-  sudoku_table = sudoku_ex7;
+  sudoku_table = sudoku_p7;
   console.table(sudoku_table);
 }
 var value = null;
@@ -1192,4 +1192,127 @@ function get_value(event, id) {
   }
   console.log(value);
   return inputted_sudoku_table(position, value);
+}
+//////////////////////////////////////////////////////////////////////////
+// function goes from right to left of table finding every empty space, empty spaces are the zeros
+function find_empty_space(table) {
+  // case where the sudoku table is solved and there are not more empty spaces
+  if (
+    table[0].indexOf(0) == -1 &&
+    table[1].indexOf(0) == -1 &&
+    table[2].indexOf(0) == -1 &&
+    table[3].indexOf(0) == -1 &&
+    table[4].indexOf(0) == -1 &&
+    table[5].indexOf(0) == -1 &&
+    table[6].indexOf(0) == -1 &&
+    table[7].indexOf(0) == -1 &&
+    table[8].indexOf(0) == -1
+  ) {
+    //below updates string in html
+    document.getElementById("t1c0r0").value = table[0][0];
+    document.getElementById("t1c0r1").value = table[0][1];
+    document.getElementById("t1c0r2").value = table[0][2];
+
+    document.getElementById("t1c1r0").value = table[1][0];
+    document.getElementById("t1c1r1").value = table[1][1];
+    document.getElementById("c1r2").value = table[1][2];
+
+    document.getElementById("t1c2r0").value = table[2][0];
+    document.getElementById("t1c2r1").value = table[2][1];
+    document.getElementById("t1c2r2").value = table[2][2];
+    console.log("Detective Sudoku Solver has solved your table");
+    console.table(table);
+    //!   var first_col = table[0];
+    //   var second_col = table[1];
+    //   var third_col = table[2];
+    //   var forth_col = table[3];
+    //   var fifth_col = table[4];
+    //   var sixth_col = table[5];
+    //   var seventh_col = table[6];
+    //   var eighth_col = table[7];
+    //   var ninth_col = table[8];
+    //!
+    //   document.getElementById("table_1").innerHTML = first_col;
+    //   document.getElementById("table_2").innerHTML = second_col;
+    //   document.getElementById("table_3").innerHTML = third_col;
+    //   document.getElementById("table_4").innerHTML = forth_col;
+    //   document.getElementById("table_5").innerHTML = fifth_col;
+    //   document.getElementById("table_6").innerHTML = sixth_col;
+    //   document.getElementById("table_7").innerHTML = seventh_col;
+    //   document.getElementById("table_8").innerHTML = eighth_col;
+    //   document.getElementById("table_9").innerHTML = ninth_col;
+
+    return true;
+  }
+  //for loops go through 1-9
+  // var meanings r = row, c = column
+  else {
+    for (var r = 0; r < 10; r++) {
+      for (var c = 0; c < 10; c++) {
+        // if object in array is equal to  0 then it means the space is empty
+        if (table[r][c] == 0) {
+          return [r, c];
+        }
+      }
+    }
+  }
+}
+// a number n is picked from 1 to 9 and in the empty position the function checks if n can go in the empty space
+//n can only be put in the empty space if it follows rules of sudoku
+function check_if_number_can_go_in_position(table, n, r, c) {
+  // var below makes a array of tables chosen column that is need to search if n can be placed in empty position
+  var column_c = table.map((d) => d[c]);
+  //case if empty position's row has number n already then the it need to re-evaluate the previous situation
+  if (table[r].indexOf(n) != -1) {
+    return false;
+  }
+  //case if empty position's column has number n already then the it need to re-evaluate the previous situation
+  if (column_c.indexOf(n) != -1) {
+    return false;
+  } // case covers if number n is already in box
+  var r_in_which_box = Math.floor(r / 3) * 3;
+  var c_in_which_box = Math.floor(c / 3) * 3;
+  var r_end_of_box = r_in_which_box + 3;
+  var c_end_of_box = c_in_which_box + 3;
+  var r_box = r_in_which_box;
+  var c_box = c_in_which_box;
+  for (r_box; r_box < r_end_of_box; r_box++) {
+    for (c_box; c_box < c_end_of_box; c_box++) {
+      if (table[r_box][c_box] == n) {
+        return false;
+      }
+    }
+  } // if above cases does not apply then sudoku number n can be placed in that position
+
+  return true;
+}
+
+// this is the main function
+// this contains all other sub functions this is the main function
+function sudoku_solver(table) {
+  //r = row, c = column
+  // function goes from right to left of table finding every empty space, empty
+  var values = find_empty_space(table);
+  // if values is false then the sudoku table is solved
+  // if values is true then the sudoku table is not solved
+  if (values === true) return true;
+  var r = values[0];
+  var c = values[1];
+  // for loop, is so 1 to 9 sudoku numbers get run into empty position
+  for (var n = 1; n < 10; n++) {
+    if (check_if_number_can_go_in_position(table, n, r, c) == true) {
+      table[r][c] = n;
+      console.table(table); //! for in testing
+      if (sudoku_solver(table) === true) return true;
+    }
+    // if function (check_if_number_can_go_in_position(table, n, r, c) == false)
+    table[r][c] = 0;
+  }
+  //if case where the table is un-unsolvable
+  console.log("this is a unsolvable table");
+}
+
+function start() {
+  var table = sudoku_table;
+  sudoku_solver(table);
 }
