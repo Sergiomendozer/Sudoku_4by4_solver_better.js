@@ -97,8 +97,8 @@ var sudoku_ex7 = [
   [1, 0, 8, 0, 7, 0, 0, 4, 6],
   [5, 0, 0, 2, 0, 0, 0, 2, 0],
 ];
-function example_1() {
-  console.log("example_1"); // !delete for testing
+function puzzle_1() {
+  console.log("puzzle_1"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "3";
   document.getElementById("t1c0r1").value = "";
@@ -212,8 +212,8 @@ function example_1() {
   console.table(sudoku_table);
 }
 
-function example_2() {
-  console.log("example_2"); // !delete for testing
+function puzzle_2() {
+  console.log("puzzle_2"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
@@ -326,8 +326,8 @@ function example_2() {
   sudoku_table = sudoku_ex2;
   console.table(sudoku_table);
 }
-function example_3() {
-  console.log("example_3"); // !delete for testing
+function puzzle_3() {
+  console.log("puzzle_3"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
@@ -440,8 +440,8 @@ function example_3() {
   sudoku_table = sudoku_ex3;
   console.table(sudoku_table);
 }
-function example_4() {
-  console.log("example_4"); // !delete for testing
+function puzzle_4() {
+  console.log("puzzle_4"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "1";
@@ -554,8 +554,8 @@ function example_4() {
   sudoku_table = sudoku_ex4;
   console.table(sudoku_table);
 }
-function example_5() {
-  console.log("example_5"); // !delete for testing
+function puzzle_5() {
+  console.log("puzzle_5"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "2";
   document.getElementById("t1c0r1").value = "7";
@@ -668,8 +668,8 @@ function example_5() {
   sudoku_table = sudoku_ex5;
   console.table(sudoku_table);
 }
-function example_6() {
-  console.log("example_6"); // !delete for testing
+function puzzle_6() {
+  console.log("puzzle_6"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
@@ -782,8 +782,8 @@ function example_6() {
   sudoku_table = sudoku_ex6;
   console.table(sudoku_table);
 }
-function example_7() {
-  console.log("example_7"); // !delete for testing
+function puzzle_7() {
+  console.log("puzzle_7"); // !delete for testing
   console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "8";
   document.getElementById("t1c0r1").value = "";
