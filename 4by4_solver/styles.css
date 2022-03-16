@@ -44,10 +44,6 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
-/* grid-template-columns: repeat(n, 1fr); n = 3 , n= number in the box */
-/* /* width: 400px; ,,set to 300px when @ 9by9  */
-/* height: 400px; ,,set to 300px when @ 9by9 */
-
 .game .digits span {
   box-sizing: border-box;
   width: 80px;

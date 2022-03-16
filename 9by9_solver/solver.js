@@ -98,8 +98,6 @@ var sudoku_p7 = [
   [0, 0, 4, 2, 5, 0, 0, 9, 7],
 ];
 function puzzle_1() {
-  console.log("puzzle_1"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "3";
   document.getElementById("t1c0r1").value = "";
   document.getElementById("t1c0r2").value = "";
@@ -213,8 +211,6 @@ function puzzle_1() {
 }
 
 function puzzle_2() {
-  console.log("puzzle_2"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
   document.getElementById("t1c0r2").value = "2";
@@ -327,8 +323,6 @@ function puzzle_2() {
   console.table(sudoku_table);
 }
 function puzzle_3() {
-  console.log("puzzle_3"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
   document.getElementById("t1c0r2").value = "8";
@@ -441,8 +435,6 @@ function puzzle_3() {
   console.table(sudoku_table);
 }
 function puzzle_4() {
-  console.log("puzzle_4"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "1";
   document.getElementById("t1c0r2").value = "9";
@@ -555,8 +547,6 @@ function puzzle_4() {
   console.table(sudoku_table);
 }
 function puzzle_5() {
-  console.log("puzzle_5"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "2";
   document.getElementById("t1c0r1").value = "7";
   document.getElementById("t1c0r2").value = "";
@@ -669,8 +659,6 @@ function puzzle_5() {
   console.table(sudoku_table);
 }
 function puzzle_6() {
-  console.log("puzzle_6"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
   document.getElementById("t1c0r2").value = "5";
@@ -783,8 +771,6 @@ function puzzle_6() {
   console.table(sudoku_table);
 }
 function puzzle_7() {
-  console.log("puzzle_7"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "5";
   document.getElementById("t1c0r2").value = "7";
@@ -899,7 +885,6 @@ function puzzle_7() {
 var value = null;
 // function resets table and clears user inputs
 function clear_all() {
-  console.log("clear table test");
   document.getElementById("t1c0r0").value = "";
   document.getElementById("t1c0r1").value = "";
   document.getElementById("t1c0r2").value = "";
@@ -1180,15 +1165,11 @@ function inputted_sudoku_table(position, value) {
 }
 // function grabs value form html that is inputted by user
 function get_value(event, id) {
-  console.log(id); //!for testing
   var position = id;
   value = document.getElementById(id).value;
   if (value.length <= 0) {
     var value = 0;
-    console.log("set to zero");
-    console.log(position + value);
   }
-  console.log(value);
   return inputted_sudoku_table(position, value);
 }
 //////////////////////////////////////////////////////////////////////////
@@ -1376,7 +1357,6 @@ function sudoku_solver(table) {
   for (var n = 1; n < 10; n++) {
     if (check_if_number_can_go_in_position(table, n, r, c) == true) {
       table[r][c] = n;
-      console.table(table); //! for in testing
       if (sudoku_solver(table) === true) return true;
     }
     // if function (check_if_number_can_go_in_position(table, n, r, c) == false)

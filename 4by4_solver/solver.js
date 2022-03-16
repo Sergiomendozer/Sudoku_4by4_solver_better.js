@@ -43,7 +43,6 @@ var sudoku_20 = [
 var value = null;
 // function resets table and clears user inputs
 function clear_all() {
-  console.log("clear table test");
   document.getElementById("c0r0").value = "";
   document.getElementById("c0r1").value = "";
   document.getElementById("c0r2").value = "";
@@ -68,8 +67,6 @@ function clear_all() {
 }
 
 function puzzle_1() {
-  console.log("puzzle_1"); // !delete for testing
-  console.log(sudoku_table); //// !delete for testing
   document.getElementById("c0r0").value = "";
   document.getElementById("c0r1").value = "";
   document.getElementById("c0r2").value = "4";
@@ -93,8 +90,6 @@ function puzzle_1() {
   console.table(sudoku_table);
 }
 function puzzle_2() {
-  console.log("puzzle_2"); // !delete for testing
-  console.log(sudoku_table); // !delete for testing
   document.getElementById("c0r0").value = "";
   document.getElementById("c0r1").value = "3";
   document.getElementById("c0r2").value = "";
@@ -118,8 +113,6 @@ function puzzle_2() {
   console.table(sudoku_table);
 }
 function puzzle_3() {
-  console.log("puzzle_3"); // !delete for testing
-  console.log(sudoku_table); // !delete for testing
   document.getElementById("c0r0").value = "3";
   document.getElementById("c0r1").value = "";
   document.getElementById("c0r2").value = "";
@@ -143,8 +136,6 @@ function puzzle_3() {
   console.table(sudoku_table);
 }
 function puzzle_4() {
-  console.log("puzzle_4"); // !delete for testing
-  console.log(sudoku_table); // !delete for testing
   document.getElementById("c0r0").value = "";
   document.getElementById("c0r1").value = "4";
   document.getElementById("c0r2").value = "";
@@ -169,8 +160,6 @@ function puzzle_4() {
   console.table(sudoku_table);
 }
 function puzzle_5() {
-  console.log("puzzle_5"); // !delete for testing
-  console.log(sudoku_table); // !delete for testing
   document.getElementById("c0r0").value = "3";
   document.getElementById("c0r1").value = "";
   document.getElementById("c0r2").value = "";
@@ -196,7 +185,6 @@ function puzzle_5() {
 
 //function puts the html input from user in correct place in sudoku table
 function inputted_sudoku_table(position, value) {
-  //   console.log(position, value); // !delete for testing
   if (position == "c0r0") {
     sudoku_table[0][0] = parseInt(value);
   } else if (position == "c0r1") {
@@ -238,8 +226,6 @@ function get_value(event, id) {
   value = document.getElementById(id).value;
   if (value.length <= 0) {
     var value = 0;
-    console.log("set to zero");
-    console.log(position + value);
   }
   return inputted_sudoku_table(position, value);
 }
@@ -296,12 +282,10 @@ function check_if_number_can_go_in_position(table, n, r, c) {
   var column_c = table.map((d) => d[c]);
   //case if empty position's row has number n already then the it need to re-evaluate the previous situation
   if (table[r].indexOf(n) != -1) {
-    console.log("re-evaluate b/c r");
     return false;
   }
   //case if empty position's column has number n already then the it need to re-evaluate the previous situation
   if (column_c.indexOf(n) != -1) {
-    console.log("re-evaluate b/c c");
     return false;
   } // if above cases does not apply then sudoku number n can be placed in that position
   return true;
