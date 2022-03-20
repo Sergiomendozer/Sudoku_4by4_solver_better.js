@@ -1,4 +1,4 @@
-<a href="url"><img src="/images/DSS_icon.png" align="left" height="200" width="100" ></a>
+<a href="url"><img src="/images/DSS_icon.png" align="left" height="200" width="140" ></a>
   
 # Detective Suduku Solver
 
@@ -14,16 +14,16 @@ Detective Suduku Solver can solve any 9x9 and 4x4 puzzle the user inputs. Sudoku
 HTML, JavaScript, Bootstrap, CSS
 
 ## Images
-<a href="url"><img src="/images/9x9_clearall.png" height="300" width="200" ></a>
-<a href="url"><img src="/images/4x4_clearall.png" height="300" width="200" ></a>
+<a href="url"><img src="/images/9x9_clearall.png" height="230" width="400" ></a>
+<a href="url"><img src="/images/4x4_clearall.png" height="230" width="400" ></a>
 Before:
-<a href="url"><img src="/images/9x9_unsolved.png" height="300" width="200" ></a>
+<a href="url"><img src="/images/9x9_unsolved.png" height="230" width="400" ></a>
 After:
-<a href="url"><img src="/images/9x9_solved.png" height="300" width="200" ></a>
+<a href="url"><img src="/images/9x9_solved.png" height="230" width="400" ></a>
 Before:
-<a href="url"><img src="/images/4x4_unsolved.png" height="300" width="200" ></a>
+<a href="url"><img src="/images/4x4_unsolved.png" height="230" width="400" ></a>
 After:
-<a href="url"><img src="/images/4x4_solved.png" height="300" width="200" ></a>
+<a href="url"><img src="/images/4x4_solved.png" height="230" width="400" ></a>
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherinempeterson.com/)
