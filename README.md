@@ -16,10 +16,10 @@ HTML, JavaScript, Bootstrap, CSS
 ## Images
 <a href="url"><img src="/images/9x9_clearall.png" height="230" width="400" ></a>
 <a href="url"><img src="/images/4x4_clearall.png" height="230" width="400" ></a>
-Before:
-<a href="url"><img src="/images/9x9_unsolved.png" height="230" width="400" ></a>
-After:
-<a href="url"><img src="/images/9x9_solved.png" height="230" width="400" ></a>
+## Before
+<a href="url"><img src="/images/9x9_unsolved.png" height="230" width="380" ></a>
+## After
+<a href="url"><img src="/images/9x9_solved.png" height="230" width="380" ></a>
 Before:
 <a href="url"><img src="/images/4x4_unsolved.png" height="230" width="400" ></a>
 After:
