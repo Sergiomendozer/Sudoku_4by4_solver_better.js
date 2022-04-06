@@ -9,7 +9,7 @@ const sudoku_reset = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
-var sudoku_table = [
+let sudoku_table = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -20,7 +20,7 @@ var sudoku_table = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
-var sudoku_p1 = [
+let sudoku_p1 = [
   [3, 0, 0, 2, 0, 0, 0, 9, 0],
   [4, 5, 0, 6, 0, 9, 0, 1, 8],
   [7, 0, 6, 0, 0, 3, 4, 0, 0],
@@ -31,7 +31,7 @@ var sudoku_p1 = [
   [1, 3, 0, 0, 6, 0, 7, 0, 5],
   [0, 2, 0, 0, 8, 0, 0, 0, 0],
 ];
-var sudoku_p2 = [
+let sudoku_p2 = [
   [0, 0, 2, 9, 8, 6, 5, 0, 0],
   [8, 0, 7, 0, 4, 3, 0, 0, 0],
   [0, 9, 0, 0, 0, 5, 0, 4, 1],
@@ -42,7 +42,7 @@ var sudoku_p2 = [
   [0, 0, 4, 7, 0, 1, 3, 8, 2],
   [1, 3, 0, 0, 0, 2, 0, 9, 6],
 ];
-var sudoku_p3 = [
+let sudoku_p3 = [
   [0, 0, 8, 3, 0, 0, 6, 0, 5],
   [0, 7, 2, 0, 5, 0, 0, 0, 4],
   [6, 0, 0, 4, 8, 2, 3, 0, 0],
@@ -53,7 +53,7 @@ var sudoku_p3 = [
   [0, 8, 0, 0, 0, 9, 4, 1, 0],
   [4, 0, 0, 0, 7, 0, 0, 8, 9],
 ];
-var sudoku_p4 = [
+let sudoku_p4 = [
   [0, 1, 9, 3, 0, 2, 0, 8, 4],
   [0, 0, 4, 1, 0, 5, 0, 9, 0],
   [5, 8, 0, 0, 6, 0, 7, 0, 0],
@@ -64,7 +64,7 @@ var sudoku_p4 = [
   [0, 6, 0, 2, 9, 0, 0, 0, 5],
   [0, 0, 7, 0, 0, 3, 0, 0, 0],
 ];
-var sudoku_p5 = [
+let sudoku_p5 = [
   [2, 7, 0, 0, 0, 0, 1, 8, 0],
   [5, 4, 0, 0, 0, 0, 0, 2, 3],
   [0, 1, 0, 0, 6, 0, 0, 0, 7],
@@ -75,7 +75,7 @@ var sudoku_p5 = [
   [4, 0, 0, 0, 0, 0, 0, 1, 0],
   [0, 3, 2, 4, 0, 8, 0, 0, 9],
 ];
-var sudoku_p6 = [
+let sudoku_p6 = [
   [0, 0, 5, 0, 1, 0, 0, 9, 0],
   [0, 4, 0, 6, 3, 0, 0, 0, 5],
   [8, 0, 0, 0, 0, 7, 1, 6, 0],
@@ -86,7 +86,7 @@ var sudoku_p6 = [
   [0, 5, 6, 0, 0, 2, 0, 3, 1],
   [7, 0, 0, 3, 4, 8, 9, 0, 0],
 ];
-var sudoku_p7 = [
+let sudoku_p7 = [
   [0, 5, 7, 1, 4, 0, 8, 0, 0],
   [0, 0, 0, 7, 8, 0, 0, 6, 5],
   [0, 2, 0, 0, 0, 3, 0, 0, 4],
@@ -882,7 +882,7 @@ function puzzle_7() {
   sudoku_table = sudoku_p7;
   console.table(sudoku_table);
 }
-var value = null;
+let value = null;
 // function resets table and clears user inputs
 function clear_all() {
   document.getElementById("t1c0r0").value = "";
@@ -1165,10 +1165,10 @@ function inputted_sudoku_table(position, value) {
 }
 // function grabs value form html that is inputted by user
 function get_value(event, id) {
-  var position = id;
+  let position = id;
   value = document.getElementById(id).value;
   if (value.length <= 0) {
-    var value = 0;
+    let value = 0;
   }
   return inputted_sudoku_table(position, value);
 }
@@ -1300,10 +1300,10 @@ function find_empty_space(table) {
     return true;
   }
   //for loops go through 1-9
-  // var meanings r = row, c = column
+  // let meanings r = row, c = column
   else {
-    for (var r = 0; r < 10; r++) {
-      for (var c = 0; c < 10; c++) {
+    for (let r = 0; r < 10; r++) {
+      for (let c = 0; c < 10; c++) {
         // if object in array is equal to  0 then it means the space is empty
         if (table[r][c] == 0) {
           return [r, c];
@@ -1315,8 +1315,8 @@ function find_empty_space(table) {
 // a number n is picked from 1 to 9 and in the empty position the function checks if n can go in the empty space
 //n can only be put in the empty space if it follows rules of sudoku
 function check_if_number_can_go_in_position(table, n, r, c) {
-  // var below makes a array of tables chosen column that is need to search if n can be placed in empty position
-  var column_c = table.map((d) => d[c]);
+  // let below makes a array of tables chosen column that is need to search if n can be placed in empty position
+  let column_c = table.map((d) => d[c]);
   //case if empty position's row has number n already then the it need to re-evaluate the previous situation
   if (table[r].indexOf(n) != -1) {
     return false;
@@ -1325,12 +1325,12 @@ function check_if_number_can_go_in_position(table, n, r, c) {
   if (column_c.indexOf(n) != -1) {
     return false;
   } // case covers if number n is already in box
-  var r_in_which_box = Math.floor(r / 3) * 3;
-  var c_in_which_box = Math.floor(c / 3) * 3;
-  var r_end_of_box = r_in_which_box + 3;
-  var c_end_of_box = c_in_which_box + 3;
-  var r_box = r_in_which_box;
-  var c_box = c_in_which_box;
+  let r_in_which_box = Math.floor(r / 3) * 3;
+  let c_in_which_box = Math.floor(c / 3) * 3;
+  let r_end_of_box = r_in_which_box + 3;
+  let c_end_of_box = c_in_which_box + 3;
+  let r_box = r_in_which_box;
+  let c_box = c_in_which_box;
   for (r_box; r_box < r_end_of_box; r_box++) {
     for (c_box; c_box < c_end_of_box; c_box++) {
       if (table[r_box][c_box] == n) {
@@ -1347,14 +1347,14 @@ function check_if_number_can_go_in_position(table, n, r, c) {
 function sudoku_solver(table) {
   //r = row, c = column
   // function goes from right to left of table finding every empty space, empty
-  var values = find_empty_space(table);
+  let values = find_empty_space(table);
   // if values is false then the sudoku table is solved
   // if values is true then the sudoku table is not solved
   if (values === true) return true;
-  var r = values[0];
-  var c = values[1];
+  let r = values[0];
+  let c = values[1];
   // for loop, is so 1 to 9 sudoku numbers get run into empty position
-  for (var n = 1; n < 10; n++) {
+  for (let n = 1; n < 10; n++) {
     if (check_if_number_can_go_in_position(table, n, r, c) == true) {
       table[r][c] = n;
       if (sudoku_solver(table) === true) return true;
@@ -1367,6 +1367,6 @@ function sudoku_solver(table) {
 }
 
 function start() {
-  var table = sudoku_table;
+  let table = sudoku_table;
   sudoku_solver(table);
 }
